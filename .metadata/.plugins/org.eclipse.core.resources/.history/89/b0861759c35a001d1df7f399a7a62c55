@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Estilização - Variaveis-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--Estilização - Cabeçalho-->
+    <link rel="stylesheet" href="/css/cabecalho.css">
+    <!--Estilização - Página-->
+    <link rel="stylesheet" href="/css/usuario/pagina-inicial-usuario.css">
+    <!--Definindo título para a Página-->
+    <title>S.O.S. | Service Organization Schedule IT</title>
+</head>
+<!--Iniciando o corpo da Página-->
+<body id="pagina-principal-usuario">
+    <!--Iniciando o cabeçalho da Página-->
+    <header id="cabecalho">
+        <!--Abrindo uma tag de Navegação-->
+        <nav>
+            <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
+            <a href="/html/usuario-não-logado/pagina-principal-usuario.html"><strong>S.O.S. I.T.</strong></a>
+            <!--Criando um LINK para a Página "pagina-inicial-usuario(para o conteúdo Sobre)"-->
+            <a href="#sobre"><strong>Sobre</strong></a>
+            <!--Criando um LINK para a Página "pagina-inicial-usuario(para o conteúdo Contato)"-->
+            <a href="#contato"><strong>Contato</strong></a>
+        </nav>
+        <!--Abrindo uma tag de Navegação-->
+        <nav>
+            <!--Criando um LINK para a Página "compromissos-usuario"-->
+            <a href="/html/usuario-logado/compromissos-usuario.html"><img src="/image/icon-person.png" alt="Icone"></a>
+            <a href="/html/usuario-logado/compromissos-usuario.html"><strong>Nome do Usuário</strong></a>
+        </nav>
+    </header>
+    <!--Iniciando a caixa principal da Página-->
+    <main id="principal">
+        <!--Abrindo uma caixa auxiliar para estilizar melhor-->
+        <div class="desenhos">
+            <img src="/image/desenho-calendario.jpg" alt="Calendário">
+            <img src="/image/desenho-compromisso.jpg" alt="Compromisso">
+            <img src="/image/desenho-relogio.jpg" alt="Relógio">
+        </div>
+        <!--Criando um título para todos os campos de pesquisa-->
+        <strong>Pesquise aqui</strong>
+        <!--Abrindo uma tag de Formulário para os campos de pesquisa-->
+        <form id="pesquisa-empresa" action="">
+            <!--Abrindo uma caixa auxiliar para estilizar melhor-->
+            <div>
+                <!--Criando textos relacionados ao select abaixo dele-->
+                <label for="cidade">Cidade</label>
+                <!--Criando uma caixa de seleção para as cidades das empresas cadastradas-->
+                <select required name="cidade" id="cidade">
+                    <!--Opções de cidades do select-->
+                    <option value="" >Selecione uma opção</option>
+                    <option value="1">São Paulo</option>
+                    <option value="2">Guarulhos</option>
+                    <option value="3">Campinas</option>
+                    <option value="4">São Bernardo do Campo</option>
+                    <option value="5">São José dos Campos</option>
+                    <option value="6">Santo André</option>
+                    <option value="7">Ribeirão Preto</option>
+                    <option value="8">Osasco</option>
+                    <option value="9">Sorocaba</option>
+                    <option value="10">Indaiatuba</option>
+                </select>
+            </div>
+            <!--Abrindo uma caixa auxiliar para estilizar melhor-->
+            <div>
+                <!--Criando textos relacionados ao select abaixo dele-->
+                <label for="servico">Serviço</label>
+                <!--Criando uma caixa de seleção para os Serviços prestados pelas empresas cadastradas-->
+                <select required name="servico" id="servico">
+                    <option value="" >Selecione uma opção</option>
+                    <option value="1">Fisioterapia</option>
+                    <option value="2">Barbeiro</option>
+                    <option value="3">Reserva de Restaurante</option>
+                    <option value="4">Projeto Paisagistico</option>
+                    <option value="5">Banho e Tosa</option>
+                    <option value="6">Dentista</option>
+                    <option value="7">Psicólogo</option>
+                    <option value="8">Desenvolvedor de Software</option>
+                    <option value="9">Otorrinolaringologia</option>
+                    <option value="10">Reserva de Quarto de Hotel</option>
+                </select>
+            </div>
+            <!--Abrindo uma caixa auxiliar para estilizar melhor-->
+            <div>
+                <label for="company">Empresa<small> (opcional)</small></label>
+                <select required name="company" id="company">
+                    <option value="" >Selecione uma opção</option>
+                    <option value="1">Empresa 01</option>
+                    <option value="2">Empresa 02</option>
+                    <option value="3">Empresa 03</option>
+                    <option value="4">Empresa 04</option>
+                    <option value="5">Empresa 05</option>
+                </select>
+            </div>
+            <button type="submit">Pesquisar</button>
+        </form>
+        <!--Abrindo uma caixa que recebe os resultado da pesquisa-->
+        <div class="resultado-pesquisa">
+            <!--Empresa com cidade e serviço relacionado com a pesquisa-->
+            <div class="resultado">
+                <span>Nome da Empresa</span>
+                <hr>
+                <span>Tipo de Serviço</span>
+                <hr>
+                <span>Cidade</span>
+                <hr>
+                <span>Nome da Agenda</span>
+            </div>
+        </div>
+        <!--Abrindo uma caixa com conteudo explicativo do site-->
+        <aside id="sobre">
+            <!--Criando título para o conteúdo-->
+            <h2>Sobre</h2>
+            <!--Criando paragrafo do conteúdo-->
+            <p>Para realizar agendamentos de forma eficiente e com a menor  taxa de erro possível, uma  excelente alternativa seria o S.O.S. (Service Organization Schedule Information Technology), onde o usuario acessa a agenda da empresa, verifica os dias e horários disponíveis em tempo real e seleciona qual é a melhor data e hora para se encaixar dentro de sua rotina. Esse sistema busca agilizar esse processo de agendamento, por meio de uma aplicação que visa diminuir o tempo necessário durante o agendamento, agregando maior agilidade e comodidade tanto da perspectiva do cliente quanto da empresa.</p>
+            <!--Criando linhas para deixar bonito-->
+            <div class="linhas">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </aside>
+    </main>
+    <footer id="contato">
+        <div class="contato-conteudo">
+            <strong>S.O.S. I.T.<br>(Service Organization Schedule Information Technology)</strong>
+            <br>
+            <a target="_blank" href="https://www.instagram.com/"><img src="/image/icon-instagram.png" alt="Contato do Instagram"></a>
+
+            <a target="_blank" href="https://pt-br.facebook.com/"><img src="/image/icon-facebook.png" alt="Contato do Facebook"></a>
+
+            <a target="_blank" href="https://www.whatsapp.com/"><img src="/image/icon-whatsapp.png" alt="Contato do WhatsApp"></a>
+
+            <a target="_blank" href="https://www.linkedin.com/"><img src="/image/icon-linkedin.png" alt="Contato do Linkedin"></a>
+        </div>
+        <div class="suporte-duvidas">
+            <strong>Suporte e Dúvidas:</strong>
+            <br>
+            <span>Cel: (00) 0 0000-0000</span>
+            <br>
+            <span>E-mail: sos.it.support@gmail.com</span>
+        </div>
+        <div class="assessoria">
+            <strong>Assessoria de imprensa:</strong>
+            <br>
+            <span>Renato Santana:</span>
+            <br>
+            <a href="renato.santana@midiaria.com">renato.santana@midiaria.com</a>
+            <br>
+            <span>Lucas Hara:</span>
+            <br>
+            <a href="lucas.hara@midiaria.com">lucas.hara@midiaria.com</a>
+        </div>
+    </footer>
+</body>
+</html>

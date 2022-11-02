@@ -13,7 +13,7 @@ public class DAO {
 	//Parâmentros para a String de conexão com o banco de dados
 	private String driver = "com.mysql.cj.jdbc.Driver"; //chamando driver que conecta ao BD
 	
-	//String de conexão
+	//String de conexão - caminho e acessos ao banco
 	private String url = "jdbc:mysql://127.0.0.1:3306/bancoagenda?useTimezone=true&serverTimezone=UTC";
 	private String usuario = "root";
 	private String senha = "123456";
@@ -34,7 +34,16 @@ public class DAO {
 			return null;
 		}
 	}
-	
+	//testando conexão
+	public void testeconnection() {
+		try {
+			Connection con = conectar(); //conecta
+			System.out.println("Conexao realizada com sucesso" + con);
+			con.close(); //fecha a conexão
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
 	
 	
 }

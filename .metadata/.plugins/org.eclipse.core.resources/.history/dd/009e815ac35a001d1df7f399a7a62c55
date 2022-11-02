@@ -1,0 +1,270 @@
+.pessoa-contato-empresa {
+    margin: 20px 0;
+    padding: 20px;
+
+    background-color: var(--color-background-one);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.pessoa-contato-empresa div:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.pessoa-contato-empresa div:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.pessoa-contato-empresa div:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.pessoa-contato-empresa div:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.endereco-empresa {
+    margin: 20px 0;
+    padding: 20px;
+
+    background-color: var(--color-background-one);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 40px;
+}
+
+.endereco-empresa div:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.endereco-empresa div:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;   
+}
+
+.endereco-empresa div:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.endereco-empresa div:nth-child(5) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.endereco-empresa div:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.endereco-empresa div:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.endereco-empresa div:nth-child(8) {
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+.endereco-empresa div:nth-child(8) label {
+    display: flex;
+    align-items: center;
+}
+
+.endereco-empresa div:nth-child(8) textarea {
+    height: 100%;
+    resize: none;
+
+    color: var(--color-text-label);
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    
+    background-color: white;
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dados-empresa {
+    margin: 20px 0;
+    padding: 20px;
+
+    background-color: var(--color-background-one);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.dados-empresa .lado-esquerdo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 4, 1fr);
+}
+
+.dados-empresa .lado-direito {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.dados-empresa > div > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.dados-empresa .lado-direito div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados-empresa .lado-direito div:nth-child(2) textarea {
+    margin-top: 7.5px;
+    height: 100%;
+    resize: none;
+
+    color: var(--color-text-label);
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    
+    background-color: white;
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bank-data {
+    height: auto;
+    margin: 20px 0;
+    padding: 20px;
+
+    background-color: var(--color-background-one);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 40px;
+}
+
+.bank-data .lado-esquerdo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.bank-data .lado-esquerdo h2 {
+    color: var(--color-text-title);
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: var(--font-family-title);
+
+    text-align: center;
+}
+
+.bank-data .lado-esquerdo p {
+    text-align: center;
+
+    color: var(--color-text-description);
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: var(--font-family-description);
+}
+
+.bank-data .lado-esquerdo div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bank-data .lado-esquerdo div label {
+    padding-top: 0px;
+
+    color: var(--color-text-label);
+    font-size: 1.2rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label);
+}
+
+.bank-data .lado-esquerdo div  input {
+    width: 15px;
+    height: 15px;
+
+    color: var(--color-text-label);
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    
+    background-color: white;
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bank-data .lado-direito {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.bank-data > div > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.login-registration {
+    margin: 20px 0;
+    padding: 20px;
+
+    background-color: var(--color-background-one);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.login-registration div:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.login-registration div:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.login-registration div:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.login-registration div:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
