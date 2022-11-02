@@ -1,0 +1,68 @@
+#user-screen-create-new-account fieldset {
+    margin: 20px 0;
+    padding: 20px;
+
+    background-color: var(--color-background-one);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 40px;
+}
+
+#user-registration fieldset div:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#user-registration fieldset div:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;   
+}
+
+#user-registration fieldset div:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#user-registration fieldset div:nth-child(5) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+#user-registration fieldset div:nth-child(6) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#user-registration fieldset div:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#user-registration fieldset:nth-child(3) div:nth-child(8) {
+    grid-column: 2/3;
+    grid-row: 3/5;
+}
+
+#user-registration fieldset:nth-child(3) div:nth-child(8) label {
+    display: flex;
+    align-items: center;
+}
+
+#user-registration fieldset:nth-child(3) div:nth-child(8) textarea {
+    height: 100%;
+    resize: none;
+
+    color: var(--color-text-label);
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    
+    background-color: white;
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -1,0 +1,174 @@
+#observation-sheet {
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: var(--color-background-one);
+}
+
+#assistant {
+    max-width: 1440px;
+    min-width: 1100px;
+
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20px 1fr 8fr;
+
+    background-color: var(--color-background-two);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#container > hr {
+    margin: 10px 0;
+
+    border: 0;
+    height: 1px;
+    width: 100%;
+
+    background-color: var(--color-botder-container);
+    opacity: 50%;
+}
+
+.top-bar {
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-row: 1fr;
+
+    margin-bottom: 10px;
+}
+
+.top-bar > h1 {
+    color: var(--color-text-title);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-family-title);
+
+    margin: auto;
+}
+
+.top-bar form {
+    margin: 0;
+}
+
+.top-bar form select {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    color: var(--color-text-label);
+    font-size: .8rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+
+    background-color: var(--color-background-buttons);
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.top-bar form select:hover {
+    background-color: var(--color-background-three);
+}
+
+#container > h2 {
+    margin: 10px 0;
+    text-align: center;
+
+    color: var(--color-text-title);
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: var(--font-family-title);
+}
+
+#container > form {
+    margin: auto;
+
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#container > form > div > label {
+    height: 40px;
+    width: 10%;
+
+    color: var(--color-text-label);
+    font-size: 1.4rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label);
+    
+    text-align: start;
+}
+
+#container > form > div > input {
+    height: 40px;
+    width: 90%;
+    margin: 10px 0;
+
+    color: var(--color-text-label);
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    
+    background-color: white;
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#container > form > button {
+    width: 200px;
+    height: 40px;
+    margin: auto;
+
+    background-color: var(--color-background-one);
+    border: 1.5px solid var(--color-border-buttons);
+    border-radius: 20px;
+
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: var(--font-family-button);
+
+    transition: background 0.3s;
+}
+
+#container > form > button:hover {
+    background-color: var(--color-background-three);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button button {
+    width: 120px;
+    height: 40px;
+
+    background-color: var(--color-background-one);
+    border: 1.5px solid var(--color-border-buttons);
+    border-radius: 20px;
+
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: var(--font-family-button);
+
+    transition: background 0.3s;
+}
+
+.button button:hover {
+    background-color: var(--color-background-three);
+}
