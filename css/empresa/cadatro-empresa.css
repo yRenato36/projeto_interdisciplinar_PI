@@ -153,7 +153,7 @@
     padding: 10px;
 }
 
-.bank-data {
+.dados-bancarios {
     height: auto;
     margin: 20px 0;
     padding: 20px;
@@ -168,13 +168,13 @@
     column-gap: 40px;
 }
 
-.bank-data .lado-esquerdo {
+.dados-bancarios .lado-esquerdo {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 1fr;
 }
 
-.bank-data .lado-esquerdo h2 {
+.dados-bancarios .lado-esquerdo h2 {
     color: var(--color-text-title);
     font-size: 1.4rem;
     font-weight: bold;
@@ -183,7 +183,7 @@
     text-align: center;
 }
 
-.bank-data .lado-esquerdo p {
+.dados-bancarios .lado-esquerdo p {
     text-align: center;
 
     color: var(--color-text-description);
@@ -192,14 +192,14 @@
     font-family: var(--font-family-description);
 }
 
-.bank-data .lado-esquerdo div {
+.dados-bancarios .lado-esquerdo div {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.bank-data .lado-esquerdo div label {
+.dados-bancarios .lado-esquerdo div label {
     padding-top: 0px;
 
     color: var(--color-text-label);
@@ -208,7 +208,7 @@
     font-family: var(--font-family-label);
 }
 
-.bank-data .lado-esquerdo div  input {
+.dados-bancarios .lado-esquerdo div  input {
     width: 15px;
     height: 15px;
 
@@ -223,19 +223,19 @@
     padding: 10px;
 }
 
-.bank-data .lado-direito {
+.dados-bancarios .lado-direito {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
 }
 
-.bank-data > div > div {
+.dados-bancarios > div > div {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
-.login-registration {
+.cadastro-login {
     margin: 20px 0;
     padding: 20px;
 
@@ -249,22 +249,22 @@
     column-gap: 40px;
 }
 
-.login-registration div:nth-child(2) {
+.cadastro-login div:nth-child(2) {
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.login-registration div:nth-child(3) {
+.cadastro-login div:nth-child(3) {
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-.login-registration div:nth-child(4) {
+.cadastro-login div:nth-child(4) {
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.login-registration div:nth-child(5) {
+.cadastro-login div:nth-child(5) {
     grid-column: 2/3;
     grid-row: 2/3;
 }

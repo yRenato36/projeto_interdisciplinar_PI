@@ -1,10 +1,10 @@
-#observation-sheet {
+body {
     margin: 20px auto;
     padding: 0 20px;
     background-color: var(--color-background-one);
 }
 
-#assistant {
+#auxiliar {
     max-width: 1440px;
     min-width: 1100px;
 

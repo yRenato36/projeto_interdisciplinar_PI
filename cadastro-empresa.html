@@ -165,61 +165,100 @@
                     </div>
                 </div>
             </fieldset>
-            <fieldset class="bank-data">
+            <!--Criando um conjunto de campos-->
+            <fieldset class="dados-bancarios">
+                <!--Criando o título para o grupo de campos-->
                 <legend>Dados Bancários</legend>
-                <div class="left-side">
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                <div class="lado-esquerdo">
+                    <!--Titulo para os termos de uso do Site-->
                     <h2>Como Funciona:</h2>
+                    <!--Descrição dos termos de uso do Site-->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus delectus reprehenderit est dolorum aliquid sed, fuga aperiam quis dolorem quasi maiores quod vel corrupti ipsam assumenda, nihil obcaecati dolor expedita!</p>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <input required type="radio" name="i-agree" id="i-agree">
-                        <label for="i-agree">Li e estou de acordo.</label>
+                        <!--Criando validação a empresa sobre estar de acordo com os termos de uso-->
+                        <input required type="radio" name="concordo" id="concordo">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="concordo">Li e estou de acordo.</label>
                     </div>
                 </div>
-                <div class="right-side">
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                <div class="lado-direito">
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="bank">Banco</label>
-                        <input required type="text" name="bank" id="bank">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="banco">Banco</label>
+                        <!--Criando caixas de entrada de dados - Banco da Empresa-->
+                        <input required type="text" name="banco" id="banco">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="agency">Agência</label>
-                        <input required type="text" name="agency" id="agency">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="agencia">Agência</label>
+                        <!--Criando caixas de entrada de dados - Agencia -->
+                        <input required type="text" name="agencia" id="agencia">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="digit">Dígito</label>
-                        <input required type="text" name="digit" id="digit">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="digito">Dígito</label>
+                        <!--Criando caixas de entrada de dados - Digito da Conta -->
+                        <input required type="text" name="digito" id="digito">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="account-type">Tipo de Conta</label>
-                        <input required type="text" name="account-type" id="account-type">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="tipo-conta">Tipo de Conta</label>
+                        <!--Criando caixas de entrada de dados - Tipo de Conta -->
+                        <input required type="text" name="tipo-conta" id="tipo-conta">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="account-number">Número da Conta</label>
-                        <input required type="text" name="account-number" id="account-number">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="numero-conta">Número da Conta</label>
+                        <!--Criando caixas de entrada de dados - Tipo de Conta -->
+                        <input required type="text" name="numero-conta" id="numero-conta">
                     </div>
                 </div>
             </fieldset>
-            <fieldset class="login-registration">
+            <!--Criando um conjunto de campos-->
+            <fieldset class="cadastro-login">
+                <!--Criando o título para o grupo de campos-->
                 <legend>Login de Acesso</legend>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
-                    <label for="company-email">E-mail</label>
-                    <input required type="email" name="company-email" id="company-email">
+                    <!--Criando textos relacionados aos inputs-->
+                    <label for="email-empresa">E-mail</label>
+                    <!--Criando caixas de entrada de dados - Email -->
+                    <input required type="email" name="email-empresa" id="email-empresa">
                 </div>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
-                    <label for="company-username">Username <small>*(mínimo cinco caracteres)</small></label>
-                    <input required name="company-username" id="company-username" type="text">
+                    <!--Criando textos relacionados aos inputs-->
+                    <label for="username-empresa">Username <small>*(mínimo cinco caracteres)</small></label>
+                    <!--Criando caixas de entrada de dados - Username -->
+                    <input required name="username-empresa" id="username-empresa" type="text">
                 </div>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
-                    <label for="company-password">Senha <small>*(mínimo cinco caracteres)</small></label>
-                    <input required name="company-password" id="company-password" type="password" pattern="[a-zA-Z0-9]{5}">
+                    <!--Criando textos relacionados aos inputs-->
+                    <label for="senha-empresa">Senha <small>*(mínimo cinco caracteres)</small></label>
+                    <!--Criando caixas de entrada de dados - Senha -->
+                    <input required name="senha-empresa" id="senha-empresa" type="password" pattern="[a-zA-Z0-9]{5}">
                 </div>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
-                    <label for="company-password-confirm">Digite a senha novamente</label>
-                    <input required name="company-password-confirm" id="company-password-confirm" type="password">
+                    <label for="confirmação-senha-empresa">Digite a senha novamente</label>
+                    <input required name="confirmação-senha-empresa" id="confirmação-senha-empresa" type="password">
                 </div>
             </fieldset>
+            <!--Iniciando uma caixa auxiliar para estilizar melhor-->
             <div>
+                <!--Criando botão voltar a pagina anterior-->
                 <button type="button"><a href="/">Voltar</a></button>
-                <button type="submit" form="user-registration">Salvar</button>
+                <!--Criando botão para salvar as informações fornecidas-->
+                <button type="submit" form="cadastro-empresa">Salvar</button>
             </div>
         </form>
     </main>

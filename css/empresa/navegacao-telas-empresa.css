@@ -1,11 +1,11 @@
-.management-options {
+.opcoes-navegacao {
     background-color: var(--color-background-two);
     border: solid 2px var(--color-botder-container);
     border-radius: 30px;
     padding: 20px;
 }
 
-.management-options img.logo {
+.opcoes-navegacao img.logo {
     display: block;
     margin: 0 auto;
     width: 100px;
@@ -14,7 +14,7 @@
     border-radius: 50%;
 }
 
-.management-options strong.company-name {
+.opcoes-navegacao strong.company-name {
     display: block;
     margin: 20px 0;
     
@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-.management-options > nav {
+.opcoes-navegacao > nav {
     width: 100%;
 
     display: flex;
@@ -36,7 +36,7 @@
     gap: 15px;
 }
 
-.management-options > nav > a > strong {
+.opcoes-navegacao > nav > a > strong {
     font-size: 1.2rem;
     font-weight: bold;
     font-family: var(--font-family-label);
@@ -44,7 +44,7 @@
     text-align: center;
 }
 
-.management-options > nav > hr {
+.opcoes-navegacao > nav > hr {
     height: 1px;
     width: 100%;
 
@@ -52,18 +52,18 @@
     border: none;
 }
 
-.management-options a {
+.opcoes-navegacao a {
     text-decoration: none;
     color: var(--color-text-title);
 
     text-align: center;
 }
 
-.management-options a:hover {
+.opcoes-navegacao a:hover {
     text-decoration: underline;
 }
 
-.management-options > nav > a > button {
+.opcoes-navegacao > nav > a > button {
     width: 120px;
     height: 40px;
 
@@ -80,6 +80,6 @@
     transition: background 0.3s;
 }
 
-.management-options > nav > a > button:hover {
+.opcoes-navegacao > nav > a > button:hover {
     background-color: var(--color-background-three);
 }
