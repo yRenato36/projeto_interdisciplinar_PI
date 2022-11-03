@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/main.css"><!--Variaveis-->
+    <link rel="stylesheet" href="/styles/shared/header.css"><!--Cabeçalho-->
+    <link rel="stylesheet" href="/styles/shared/company-management-options.css">
+    <link rel="stylesheet" href="/styles/partials/company-screen-appointments-scheduled.css"><!--Estilização so para esta tela-->
+    
+
+    <title>S.O.S. | Service Organization Schedule IT</title>
+</head>
+<body id="appointments-scheduled">
+    <header id="header-content">
+        <nav class="site-information">
+            <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+        </nav>
+    </header>
+    <div id="assistant">
+        <div class="management-options">
+            <img class="logo" src="src/main/webapp/image/icon-person.png" alt="Logo da Empresa">
+            <strong class="company-name">Nome da Empresa</strong>
+            <nav>
+                <a href="/company-screen-home-page.html"><strong>Home Page</strong></a>
+                <hr>
+                <a href="/company-screen-schedule.html"><strong>Agenda da Empresa</strong></a>
+                <hr>
+                <a href="/company-screen-appointments-scheduled.html"><strong>Compromisso Marcados</strong></a>
+                <hr>
+                <a href="/company-screen-observation-sheet.html"><strong>Ficha de Observação</strong></a>
+                <hr>
+                <a href="/company-screen-data.html"><strong>Dados da Empresa</strong></a>
+                <hr>
+                <a href="/user-screen-home-page.html"><button type="button">Sair</button></a>
+            </nav>
+        </div>
+        <main id="container">
+            <div class="top-bar">
+                <h1>Compromissos Marcados</h1>
+                <form action="" id="schedule-selection">
+                    <select name="schedule" id="schedule">
+                        <option value="1" >Todas as Agendas</option>
+                        <option value="2">Agenda 01</option>
+                        <option value="3">Agenda 02</option>
+                        <option value="4">Agenda 03</option>
+                        <option value="5">Agenda 04</option>
+                        <option value="6">Agenda 05</option>
+                    </select>
+                </form>
+            </div>
+            <hr>
+            <div class="appointments-scheduled-content">
+                <div>
+                    <span>Data: <span class="date">00/00/00</span></span>
+                    <span>Hora: <span class="hour">00:00</span></span>
+                    <hr>
+                    <span class="service">Serviço Prestado</span>
+                    <hr>
+                    <span class="name-customer">Nome do Cliente</span>
+                    <hr>
+                    <span class="contact-customer">(00) 0.0000-0000</span>
+                    <hr>
+                    <span class="name schedule">Nome da Agenda</span>
+                </div>
+            </div>
+            <div class="button">
+                <button type="button">Ficha de Observação</button>
+                <button type="button">Desmarcar</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

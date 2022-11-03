@@ -1,0 +1,45 @@
+package model;
+
+import java.util.Date;
+
+/**
+ * Classe responsável pela busca os dados de todos os documentos .jsp, ela faz esse meio campo para garantir a segurança dos dados,
+ * e transmite para outras classes.
+ * @author Renato da Silva Santana 3º ADS
+ *
+ */
+public class JavaBeans {
+	/*TABELA AGENDA*/
+	private int id_agenda;
+	private int id_empresa_fk;
+	private String dia; //verificar se os tipos de dados permitem um ao outro
+	//private String horario_inicio; //verificar se os tipos de dados permitem um ao outro
+	//private String horario_fim;
+	private String servico;
+	
+	/*TABELA BANCO_EMPRESA*/
+	private int id_banco_empresa;
+	private String banco;
+	private int agencia;
+	private int digito;
+	private String tipo_conta;
+	private String conta;
+	
+	/*TABELA COMPROMISSO*/
+	private int id_compromisso;
+	//private int id_empresa_fk;
+	//private int id_usuario_fk;
+	//private int id_servico_fk;
+	//private int id_servico_fk;
+	//private int id_ficha_observacao_fk;
+	private String dia;
+	//private String horario_inicio;
+	//private String horario_fim;
+	
+	/*TABELA CONTATO*/
+	private int id_contato;
+	private String nome;
+	private String email;
+	private int telefone;
+	
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/main.css"><!--Variaveis-->
+    <link rel="stylesheet" href="/styles/shared/header.css"><!--Cabeçalho-->
+    <link rel="stylesheet" href="/styles/shared/user-management-options.css">
+    <link rel="stylesheet" href="/styles/partials/user-screen-profile-my-localization.css"><!--Estilização so para esta tela-->
+    
+
+    <title>S.O.S. | Service Organization Schedule IT</title>
+</head>
+<body id="my-localization">
+    <header id="header-content">
+        <nav class="site-information">
+            <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+        </nav>
+        <nav>
+            <a href="/user-screen-profile-appointments.html"><img src="/image/icon-person.png" alt="Icone"></a>
+            <a href="/user-screen-profile-appointments.html"><strong>Nome do Usuário</strong></a>
+        </nav>
+    </header>    
+    <main id="container">
+        <div class="top-bar">
+            <a href="/user-screen-profile-appointments.html"><strong>Meus Compromissos</strong></a>
+            <a href="/user-screen-profile-my-datas.html"><strong>Meus Dados</strong></a>
+            <a href="/user-screen-profile-my-localization.html"><strong>Meu Endereço</strong></a>
+        </div>
+        <hr>
+        <form id="my-localization-content" action="">
+            <div>
+                <label for="user-cep">CEP <small>*(Apenas números)</small></label>
+                <input required type="text" name="user-cep" id="user-cep" placeholder="xxxxx-xxx" pattern="[0-9]{8}">
+            </div>
+            <div>
+                <label for="user-state">Estado</label>
+                <input required type="text" name="user-state" id="user-state">
+            </div>
+            <div>
+                <label for="user-city">Cidade</label>
+                <input required type="text" name="user-city" id="user-city">
+            </div>
+            <div>
+                <label for="user-district">Bairro</label>
+                <input required type="text" name="user-district" id="user-district">
+            </div>
+            <div>
+                <label for="user-address">Endereço</label>
+                <input required type="text" name="user-address" id="user-address">
+            </div>
+            <div>
+                <label for="user-number">Número</label>
+                <input required type="text" name="user-number" id="user-number" pattern="{0-9}">
+            </div>
+            <div>
+                <label for="user-complement">Completo <small>*(opcional)</small></label>
+                <textarea name="user-complement" id="user-complement" ></textarea>
+            </div>
+        </form>
+        <hr>
+        <div class="button">
+            <button form="" type="button">Alterar</button>
+            <button form="" type="button">Cancelar</button>
+            <button form="" type="submit">Salvar</button>
+        </div>
+    </main>
+</body>
+</html>

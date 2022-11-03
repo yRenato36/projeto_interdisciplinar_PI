@@ -1,0 +1,92 @@
+package model;
+
+import java.util.Date;
+
+/**
+ * Classe responsável pela busca os dados de todos os documentos .jsp, ela faz esse meio campo para garantir a segurança dos dados,
+ * e transmite para outras classes.
+ * @author Renato da Silva Santana 3º ADS
+ *
+ */
+public class JavaBeans {
+	
+	/*TABELA AGENDA*/
+	private int id_agenda;
+	private String dia; //verificar se os tipos de dados permitem um ao outro
+	private String horario_inicio; //verificar se os tipos de dados permitem um ao outro
+	private String horario_fim;
+	private String servico;
+
+	servico = "terst";
+	/*TABELA BANCO_EMPRESA*/
+	private int id_banco_empresa;
+	private String banco;
+	private int agencia;
+	private int digito;
+	private String tipo_conta;
+	private String conta;
+	
+	/*TABELA COMPROMISSO*/
+	private int id_compromisso;
+	private String dia_compromisso;
+	private String horario_inicio_compromisso;
+	private String horario_fim_compromisso;
+	
+	/*TABELA CONTATO*/
+	private int id_contato;
+	private String nome_contato;
+	private String email_contato;
+	private int telefone_contato;
+	
+	/*TABELA EMPRESA*/
+	private int id_empresa;
+	private int cnpj_empresa;
+	private String razao_social_empresa;
+	private String imagem_perfil;
+	private String imagem_empresa;
+	private String nome_fantasia;
+	private String sobre_empresa;
+	
+	/*TABELA ENDERECO_EMPRESA*/
+	private int id_endereco_empresa;
+	private int cep_empresa;
+	private String estado_empresa;
+	private String cidade_empresa;
+	private String bairro_empresa;
+	private int numero_empresa;
+	private String endereco_empresa;
+	private String complemento_empresa;
+	
+	/*TABELA FICHA_OBSERVACAO*/
+	private int id_ficha_observacao;
+	private String observacao;
+	
+	/*TABELA SERVICO*/
+	private int id_servico;
+	private String nome_servico;
+	private String tipo_servico;
+	private String descricao;
+	
+	/*TABELA USUARIO*/
+	private int id_usuario;
+	private String nome_usuario;
+	private String cpf_usuario;
+	private String nascimento_usuario;
+	private int telefone_usuario;
+	private String email_usuario;
+	private String username_usuario;
+	private String senha_usuario;
+	private int cep_usuario;
+	private String endereco_usuario;
+	private String estado_usuario;
+	private String cidade_usuario;
+	private int numero_usuario;
+	private String complemento_usuario;
+	
+	
+	
+	
+	
+	
+	
+}

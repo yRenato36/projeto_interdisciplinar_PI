@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/styles/main.css"> <!--Variaveis-->
+    <link rel="stylesheet" href="/styles/shared/header.css"><!--Cabeçalho-->
+    <link rel="stylesheet" href="/styles/partials/user-screen-schedule.css"> <!--Estilização so para esta pagina-->
+
+    <title>S.O.S. | Service Organization Schedule IT</title>
+</head>
+<body id="user-screen-schedule">
+    <header id="header-content">
+        <nav class="site-information">
+            <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+        </nav>
+        <nav class="login-registration">
+            <a href="/company-screen-registration.html"><strong>Cadastre sua Empresa</strong></a>
+            <a href="/user-screen-create-new-account.html"><strong>Criar Conta</strong></a>
+            <a href="/access-login.html"><strong>Entrar</strong></a>
+        </nav>
+    </header>
+    <div id="assistant">
+        <div id="company-content">
+            <img class="logo" src="/image/icon-person.png" alt="Logo Empresa">
+            <strong class="company-name">Nome da Empresa</strong>
+
+            <div class="row-one"></div>
+            <strong class="about-company">Sobre a Empresa</strong>
+            <p class="about-company-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste obcaecati ipsum veritatis, deserunt tempora corporis perferendis eius voluptatibus adipisci! Minima fuga totam nam ea voluptatem, itaque voluptatum eligendi odio exercitationem!</p>
+
+            <div class="row-two"></div>
+            <strong class="company-location">Localização</strong>
+            <p class="company-location-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste obcaecati ipsum veritatis, deserunt tempora corporis perferendis eius voluptatibus adipisci! Minima fuga totam nam ea voluptatem, itaque voluptatum eligendi odio exercitationem!</p>
+
+            <div class="row-three"></div>
+            <strong class="images-company">Imagens</strong>
+            <div class="images-company-content"></div>
+
+            <div class="row-four"></div>
+            <strong class="contact-company">Contato</strong>
+            <p class="contact-company-content">Celular: (00) 0.0000-0000<br>E-mail: example.example@example.com</p>
+        </div>
+        <main id="container">
+            <div class="left-container">
+                <form id="search-schedule" action="">
+                    <div class="select-service">
+                        <label for="service">Serviço</label>
+                        <select name="service" id="service">
+                            <option value="" >Selecione uma opção</option>
+                            <option value="1">Fisioterapia</option>
+                            <option value="2">Barbeiro</option>
+                            <option value="3">Reserva de Restaurante</option>
+                            <option value="4">Projeto Paisagistico</option>
+                            <option value="5">Banho e Tosa</option>
+                        </select> 
+                    </div>
+                    <div class="select-schedule">
+                        <label for="schedule">Agenda</label>
+                        <select name="schedule" id="schedule">
+                            <option value="" >Selecione uma opção</option>
+                            <option value="1">Agenda 01</option>
+                            <option value="2">Agenda 02</option>
+                            <option value="3">Agenda 03</option>
+                            <option value="4">Agenda 04</option>
+                            <option value="5">Agenda 05</option>
+                        </select>
+                    </div>
+                    <!--<button type="submit">Procurar Agenda</button>-->
+                </form>
+                <form id="calendar-content" action="">
+                    <label for="select-date">Calendário</label>
+                    <input placeholder="" name="select-date" id="select-date" type="date">
+                </form>
+                <form id="commitment-management" action="">
+                    <button type="button">Marcar Compromisso</button>
+                    <button type="button">Desmarcar Compromisso</button>
+                </form>
+            </div>
+            <div class="right-container">
+                <div class="time">
+                    <span>06:00</span>
+                    <span>07:00</span>
+                    <span>08:00</span>
+                    <span>09:00</span>
+                    <span>10:00</span>
+                    <span>11:00</span>
+                    <span>12:00</span>
+                    <span>13:00</span>
+                    <span>14:00</span>
+                    <span>15:00</span>
+                    <span>16:00</span>
+                    <span>17:00</span>
+                    <span>18:00</span>
+                </div>
+                <div class="week">
+                    <hr>
+                    <span>Seg</span>
+                    <hr>
+                    <span>Ter</span>
+                    <hr>
+                    <span>Qua</span>
+                    <hr>
+                    <span>Qui</span>
+                    <hr>
+                    <span>Sex</span>
+                    <hr>
+                    <span>Sab</span>
+                    <hr>
+                    <hr>
+                    <span class="day-seg">17</span>
+                    <hr>
+                    <span class="day-ter">18</span>
+                    <hr>
+                    <span class="day-qua">19</span>
+                    <hr>
+                    <span class="day-qui">20</span>
+                    <hr>
+                    <span class="day-sex">21</span>
+                    <hr>
+                    <span class="day-sab">22</span>
+                    <hr>
+                </div>
+                <div class="schedule-content">
+                    <hr class="column">
+                    <hr class="column">
+                    <hr class="column">
+                    <hr class="column">
+                    <hr class="column">
+                    <hr class="column">
+                    <hr class="column">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <hr class="row">
+                    <div class="compromisso">
+                        <span>Compromisso marcado</span>
+                    </div>
+                    <div class="compromisso">
+                        <span>Compromisso marcado</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

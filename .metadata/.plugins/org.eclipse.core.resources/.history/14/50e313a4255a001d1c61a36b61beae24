@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/main.css"><!--Variaveis-->
+    <link rel="stylesheet" href="styles/shared/header.css"><!--Cabeçalho-->
+    <link rel="stylesheet" href="styles/partials/user-screen-home-page.css"><!--Estilização so para esta tela-->
+
+    <title>S.O.S. | Service Organization Schedule IT</title>
+</head>
+<body id="user-screen-home-page">
+    <header id="header-content">
+        <nav class="site-information">
+            <a href="user-screen-home-page.html"><strong>S.O.S. I.T.</strong></a>
+            <a href="#about"><strong>Sobre</strong></a>
+            <a href="#bottom-container"><strong>Contato</strong></a>
+        </nav>
+        <nav class="login-registration">
+            <a href="company-screen-registration.html"><strong>Cadastre sua Empresa</strong></a>
+            <a href="user-screen-create-new-account.html"><strong>Criar Conta</strong></a>
+            <a href="access-login.html"><strong>Entrar</strong></a>
+        </nav>
+    </header>
+    <main id="container">
+        <div class="graphics">
+            <img src="image/desenho-calendario.jpg" alt="Calendário">
+            <img src="image/desenho-compromisso.jpg" alt="Compromisso">
+            <img src="image/desenho-relogio.jpg" alt="Relógio">
+        </div>
+        <div class="select-content">
+            <strong>Pesquise aqui</strong>
+            <form id="search-company" action="">
+                <div class="select-city">
+                    <label for="city">Cidade</label>
+                    <select required name="city" id="city">
+                        <option value="" >Selecione uma opção</option>
+                        <option value="1">São Paulo</option>
+                        <option value="2">Guarulhos</option>
+                        <option value="3">Campinas</option>
+                        <option value="4">São Bernardo do Campo</option>
+                        <option value="5">São José dos Campos</option>
+                        <option value="6">Santo André</option>
+                        <option value="7">Ribeirão Preto</option>
+                        <option value="8">Osasco</option>
+                        <option value="9">Sorocaba</option>
+                        <option value="10">Indaiatuba</option>
+                    </select>
+                </div>
+                <div class="select-service">
+                    <label for="service">Serviço</label>
+                    <select required name="service" id="service">
+                        <option value="" >Selecione uma opção</option>
+                        <option value="1">Fisioterapia</option>
+                        <option value="2">Barbeiro</option>
+                        <option value="3">Reserva de Restaurante</option>
+                        <option value="4">Projeto Paisagistico</option>
+                        <option value="5">Banho e Tosa</option>
+                        <option value="6">Dentista</option>
+                        <option value="7">Psicólogo</option>
+                        <option value="8">Desenvolvedor de Software</option>
+                        <option value="9">Otorrinolaringologia</option>
+                        <option value="10">Reserva de Quarto de Hotel</option>
+                    </select>
+                </div>
+                <div class="select-company">
+                    <label for="company">Empresa<small> (opcional)</small></label>
+                    <select required name="company" id="company">
+                        <option value="" >Selecione uma opção</option>
+                        <option value="1">Empresa 01</option>
+                        <option value="2">Empresa 02</option>
+                        <option value="3">Empresa 03</option>
+                        <option value="4">Empresa 04</option>
+                        <option value="5">Empresa 05</option>
+                    </select>
+                </div>
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="search-result">
+            <!--Exemplo (Provisorio)-->
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+            <div class="result"></div>
+        </div>
+        <aside class="about-content">
+            <h2 id="about">Sobre</h2>
+            <p>Para realizar agendamentos de forma eficiente e com a menor  taxa de erro possível, uma  excelente alternativa seria o S.O.S. (Service Organization Schedule Information Technology), onde o usuario acessa a agenda da empresa, verifica os dias e horários disponíveis em tempo real e seleciona qual é a melhor data e hora para se encaixar dentro de sua rotina. Esse sistema busca agilizar esse processo de agendamento, por meio de uma aplicação que visa diminuir o tempo necessário durante o agendamento, agregando maior agilidade e comodidade tanto da perspectiva do cliente quanto da empresa.</p>
+            <div class="row-content">
+                <!--Linhas-->
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </aside>
+    </main>
+    <footer id="bottom-container">
+        <div class="contact-content">
+            <strong>S.O.S. I.T.<br>(Service Organization Schedule Information Technology)</strong>
+            <br>
+            <a class="contact-instagram" target="_blank" href="https://www.instagram.com/"><img src="image/icon-instagram.png" alt="Contato do Instagram"></a>
+
+            <a class="contact-facebook" target="_blank" href="https://pt-br.facebook.com/"><img src="image/icon-facebook.png" alt="Contato do Facebook"></a>
+
+            <a class="contact-whatsapp" target="_blank" href="https://www.whatsapp.com/"><img src="image/icon-whatsapp.png" alt="Contato do WhatsApp"></a>
+
+            <a class="contact-linkedin" target="_blank" href="https://www.linkedin.com/"><img src="image/icon-linkedin.png" alt="Contato do Linkedin"></a>
+        </div>
+        <div class="support-questions">
+            <strong>Suporte e Dúvidas:</strong>
+            <br>
+            <span>Cel: (00) 0 0000-0000</span>
+            <br>
+            <span>E-mail: sos.it.support@gmail.com</span>
+        </div>
+        <div class="advice">
+            <strong>Assessoria de imprensa:</strong>
+            <br>
+            <span>Renato Santana:</span>
+            <br>
+            <a href="renato.santana@midiaria.com">renato.santana@midiaria.com</a>
+            <br>
+            <span>Lucas Hara:</span>
+            <br>
+            <a href="lucas.hara@midiaria.com">lucas.hara@midiaria.com</a>
+        </div>
+    </footer>
+</body>
+</html>

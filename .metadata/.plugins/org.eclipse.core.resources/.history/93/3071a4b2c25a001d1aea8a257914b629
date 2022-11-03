@@ -1,0 +1,489 @@
+#company-screen-schedule {
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: var(--color-background-one);
+}
+
+#assistant {
+    max-width: 1440px;
+    min-width: 1100px;
+
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+}
+
+#company-content {
+    margin-right: 20px;
+    background-color: var(--color-background-two);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#company-content img.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    background-color: var(--color-background-one);
+    border: solid 1.5px var(--color-botder-container);
+    border-radius: 50%;
+}
+
+#company-content strong.company-name {
+    display: block;
+    margin-top: 10px;
+    color: var(--color-text-title);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--font-family-title);
+    text-align: center;
+}
+
+#company-content div.row-one, div.row-two, div.row-three, div.row-four, div.row-five {
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: solid 1px var(--color-botder-container);
+    opacity: 50%;
+}
+
+#company-content strong.about-company, strong.company-location, strong.images-company, strong.contact-company {
+    display: block;
+    margin-top: 10px;
+    color: var(--color-text-title);
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--font-family-title);
+    text-align: center;
+}
+
+#company-content p.about-company-content, p.company-location-content, p.contact-company-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    color: var(--color-text-description);
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: var(--font-family-description);
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+#company-content div.images-company-content {
+    width: 80%;
+    height: 150px;
+    margin: 5px auto;
+    border: solid 1px black;
+}
+
+#container {
+    margin-left: 0;
+    background-color: var(--color-background-two);
+    border: solid 2px var(--color-botder-container);
+    border-radius: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+}
+
+#search-schedule {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px;
+    display: block;
+    text-align: center;
+    color: var(--color-text-label);
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+}
+
+#search-schedule > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-schedule div select {
+    width: 80%;
+    height: 35px;
+
+    text-align: center;
+    color: var(--color-text-label);
+    font-size: .9rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+
+    background-color: var(--color-background-buttons);
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#search-schedule div select:hover {
+    background-color: var(--color-background-three);
+}
+
+#search-schedule div button:hover {
+    background-color: var(--color-background-three);
+}
+
+#search-schedule div button {
+    height: 35px;
+    width: 35px;
+
+    text-align: center;
+    color: var(--color-border-buttons);
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+
+    background-color: var(--color-background-buttons);
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 17.5px;
+    cursor: pointer;
+}
+
+#calendar-content input {
+    margin: 0 auto;
+    height: 40px;
+    width: 100%;
+
+    background-color: var(--color-background-one);
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+
+    text-align: center;
+    font-size: .8rem;
+    font-weight: normal;
+    font-family: var(--font-family-button);
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+::-webkit-calendar-picker-indicator {
+    margin-right: 3px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--color-background-three);
+    cursor: pointer;
+}
+
+#calendar-content input:hover {
+    background-color: var(--color-background-three);
+}
+
+#commitment-management button {
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+
+    color: var(--color-text-buttons);
+    font-size: .8rem;
+    font-weight: normal;
+    font-family: var(--font-family-button);
+
+    background-color: var(--color-background-buttons);
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#commitment-management button:hover {
+    background-color: var(--color-background-three);
+}
+
+.right-container {
+    display: grid;
+    grid-template-columns: 8fr 92fr;
+    grid-template-rows: 8fr 92fr;
+}
+
+.right-container .time {
+    grid-column: 1/2; 
+    grid-row: 1/3;
+
+    margin-top: 23%;
+
+    display: grid;
+    grid-template-rows: repeat(13, 1fr);
+}
+
+.right-container .week {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1px 1fr) 1px ;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 5px;
+}
+
+.right-container .week hr {
+    border: 0;
+    background-color: black;
+    opacity: 50%;
+}
+
+.right-container > div > span {
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    padding-left: 15px;
+}
+
+.schedule-content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1px 1fr) 1px;
+    grid-template-rows: repeat(24, 1px 30px) 1px;
+
+    margin-bottom: 1%;
+}
+
+.schedule-content hr {
+    border: 0;
+    background-color: black;
+    opacity: 50%;
+}
+
+.schedule-content hr.column {
+    width: 1px;
+}
+
+.schedule-content hr.row {
+    height: 1px;
+}
+
+.schedule-content hr.column:hover {
+    width: 2px;
+    background-color: blue;
+    opacity: 100%;
+}
+
+.schedule-content hr.row:hover {
+    height: 2px;
+    background-color: blue;
+    opacity: 100%;
+}
+
+.schedule-content hr.column:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/49;
+}
+.schedule-content hr.column:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 1/49;
+}
+.schedule-content hr.column:nth-child(3) {
+    grid-column: 5/6;
+    grid-row: 1/49;
+}
+.schedule-content hr.column:nth-child(4) {
+    grid-column: 7/8;
+    grid-row: 1/49;
+}
+.schedule-content hr.column:nth-child(5) {
+    grid-column: 9/10;
+    grid-row: 1/49;
+}
+.schedule-content hr.column:nth-child(6) {
+    grid-column: 11/12;
+    grid-row: 1/49;
+}
+.schedule-content hr.column:nth-child(7) {
+    grid-column: 13/14;
+    grid-row: 1/49;
+}
+
+.schedule-content hr.row:nth-child(8) {
+    grid-column: 1/14;
+    grid-row: 1/2;
+}
+
+.schedule-content hr.row:nth-child(9) {
+    grid-column: 1/14;
+    grid-row: 3/4;
+}
+.schedule-content hr.row:nth-child(10) {
+    grid-column: 1/14;
+    grid-row: 5/6;
+}
+.schedule-content hr.row:nth-child(11) {
+    grid-column: 1/14;
+    grid-row: 7/8;
+}
+.schedule-content hr.row:nth-child(12) {
+    grid-column: 1/14;
+    grid-row: 9/10;
+}
+.schedule-content hr.row:nth-child(13) {
+    grid-column: 1/14;
+    grid-row: 11/12;
+}
+.schedule-content hr.row:nth-child(14) {
+    grid-column: 1/14;
+    grid-row: 13/14;
+}
+.schedule-content hr.row:nth-child(15) {
+    grid-column: 1/14;
+    grid-row: 15/16;
+}
+.schedule-content hr.row:nth-child(16) {
+    grid-column: 1/14;
+    grid-row: 17/18;
+}
+.schedule-content hr.row:nth-child(17) {
+    grid-column: 1/14;
+    grid-row: 19/20;
+}
+.schedule-content hr.row:nth-child(18) {
+    grid-column: 1/14;
+    grid-row: 21/22;
+}
+.schedule-content hr.row:nth-child(19) {
+    grid-column: 1/14;
+    grid-row: 23/24;
+}
+.schedule-content hr.row:nth-child(20) {
+    grid-column: 1/14;
+    grid-row: 25/26;
+}
+.schedule-content hr.row:nth-child(21) {
+    grid-column: 1/14;
+    grid-row: 27/28;
+}
+.schedule-content hr.row:nth-child(22) {
+    grid-column: 1/14;
+    grid-row: 29/30;
+}
+.schedule-content hr.row:nth-child(23) {
+    grid-column: 1/14;
+    grid-row: 31/32;
+}
+.schedule-content hr.row:nth-child(24) {
+    grid-column: 1/14;
+    grid-row: 33/34;
+}
+.schedule-content hr.row:nth-child(25) {
+    grid-column: 1/14;
+    grid-row: 35/36;
+}
+.schedule-content hr.row:nth-child(26) {
+    grid-column: 1/14;
+    grid-row: 37/38;
+}
+.schedule-content hr.row:nth-child(27) {
+    grid-column: 1/14;
+    grid-row: 39/40;
+}
+.schedule-content hr.row:nth-child(28) {
+    grid-column: 1/14;
+    grid-row: 41/42;
+}
+.schedule-content hr.row:nth-child(29) {
+    grid-column: 1/14;
+    grid-row: 43/44;
+}
+.schedule-content hr.row:nth-child(30) {
+    grid-column: 1/14;
+    grid-row: 45/46;
+}
+.schedule-content hr.row:nth-child(31) {
+    grid-column: 1/14;
+    grid-row: 47/48;
+}
+.schedule-content hr.row:nth-child(32) {
+    grid-column: 1/14;
+    grid-row: 49/50;
+}
+
+.right-container .schedule-content > div  {
+    border: solid 2px red;
+    border-radius: 10px;
+    background-color: blue;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container .schedule-content > div:hover {
+    background-color: yellow;
+}
+
+.right-container .schedule-content > div:active {
+    background-color: orange;
+}
+
+.right-container .schedule-content > div > span {
+    text-align: center;
+}
+
+.right-container .schedule-content > div:nth-child(33) {
+    grid-column: 12/13; /*Sabado*/
+    grid-row: 2/9; /*6:00/8:00*/
+    /*Desce mais para entender melhor*/
+}
+
+.right-container .schedule-content > div:nth-child(34) {
+    grid-column: 8/9; /*Sabado*/
+    grid-row: 17/25; /*6:00/8:00*/
+    /*Desce mais para entender melhor*/
+}
+
+/*
+Variaveis de Semana:
+
+Segunda = 2/3
+Terça = 4/5
+Quarta = 6/7
+Quinta = 8/9
+Sexta = 10/11
+Sabado = 12/13
+
+Variaveis de Horas:
+
+6:00 = 2
+6:30 = 3 
+7:00 = 5
+7:30 = 7
+8:00 = 9
+8:30 = 11
+9:00 = 13
+9:30 = 15
+10:00 = 17
+10:30 = 19
+11:00 = 21
+11:30 = 23
+12:00 = 25
+12:30 = 27
+13:00 = 29
+13:30 = 31
+14:00 = 33
+14:30 = 35
+15:00 = 37
+15:30 = 39
+16:00 = 41
+16:30 = 43
+17:00 = 45
+17:30 = 47
+18:00 = 49
+*/
