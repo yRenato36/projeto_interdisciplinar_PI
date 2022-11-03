@@ -23,7 +23,7 @@
         <!--Abrindo uma tag de Navegação-->
         <nav>
             <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
-            <a href="pagina-principal-usuario.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+            <a href="user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
         </nav>
     </header> 
     <!--Iniciando a caixa principal da Página-->
