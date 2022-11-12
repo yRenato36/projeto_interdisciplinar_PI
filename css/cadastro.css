@@ -85,6 +85,10 @@ form > div button {
     transition: background 0.3s;
 }
 
+form > div button:last-child {
+    font-size: .8rem;
+}
+
 form > div button:hover {
 background-color: var(--color-background-three);
 }

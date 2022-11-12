@@ -5,32 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/styles/main.css"><!--Variaveis-->
-    <link rel="stylesheet" href="/styles/shared/header.css"><!--Cabeçalho-->
-    <link rel="stylesheet" href="/styles/shared/user-management-options.css">
-    <link rel="stylesheet" href="/styles/partials/user-screen-profile-appointments.css"><!--Estilização so para esta tela-->
-    
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
+    <!--Estilização - Variaveis-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--Estilização - Cabeçalho-->
+    <link rel="stylesheet" href="/css/cabecalho.css">
+    <!--Estilização - Navegação das Paginas-->
+    <link rel="stylesheet" href="/css/usuario/navegacao-telas-usuario.css">
+    <!--Estilização - Pagina-->
+    <link rel="stylesheet" href="/css/usuario/compromissos-usuario.css">
+    <!--Definindo título para a Página-->
     <title>S.O.S. | Service Organization Schedule IT</title>
 </head>
-<body id="profile-appointments">
-    <header id="header-content">
-        <nav class="site-information">
-            <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
-        </nav>
+<!--Iniciando o corpo da Página-->
+<body>
+    <!--Iniciando o cabeçalho da Página-->
+    <header id="cabecalho">
+        <!--Abrindo uma tag de Navegação-->
         <nav>
-            <a href="/user-screen-profile-appointments.html"><img src="/image/icon-person.png" alt="Icone"></a>
-            <a href="/user-screen-profile-appointments.html"><strong>Nome do Usuário</strong></a>
+            <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
+            <a href="/pagina-principal-usuario-logado.html"><strong>S.O.S. I.T.</strong></a>
         </nav>
-    </header>    
-    <main id="container">
-        <div class="top-bar">
-            <a href="/user-screen-profile-appointments.html"><strong>Meus Compromissos</strong></a>
-            <a href="/user-screen-profile-my-datas.html"><strong>Meus Dados</strong></a>
-            <a href="/user-screen-profile-my-localization.html"><strong>Meu Endereço</strong></a>
+        <!--Abrindo uma tag de Navegação-->
+        <nav>
+            <!--Criando um LINK para a Página "compromissos-usuario"-->
+            <a href="/usuario-logado/compromissos-usuario.html"><img src="/image/icon-person.png" alt="Icone"></a>
+            <!--Criando um LINK para a Página "compromissos-usuario"-->
+            <a href="/usuario-logado/compromissos-usuario.html"><strong>Nome do Usuário</strong></a>
+        </nav>
+    </header> 
+    <!--Iniciando a caixa principal da Página--> 
+    <main id="principal">
+        <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+        <div class="barra-superior">
+            <!--Criando um LINK para a Página "compromissos-usuario"-->
+            <a href="/compromissos-usuario.html"><strong>Meus Compromissos</strong></a>
+            <!--Criando um LINK para a Página "dados-usuario"-->
+            <a href="/dados-usuario.html"><strong>Meus Dados</strong></a>
         </div>
+        <!--Linha-->
         <hr>
-        <div class="appointments">
+        <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+        <div class="compromissos-marcados">
+            <!--Agrupando dados do compromisso em uma caixa-->
             <div>
                 <span>Data: <span class="date">00/00/00</span></span>
                 <span>Hora: <span class="hour">00:00 às 00:00</span></span>
@@ -43,10 +61,15 @@
                 <hr>
                 <span class="name schedule">Nome da Agenda</span>
             </div>
+        </div>
+        <!--Linha-->
         <hr>
-        <div class="button">
-            <button type="button">Ficha de Observação</button>
-            <button type="button">Desmarcar</button>
+        <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+        <div class="botao">
+            <!--Botão para abrir a ficha de observação ligada ao compromisso-->
+            <button disabled type="button">Ficha de Observação</button>
+            <!--Desmarcar um compromisso-->
+            <button disabled type="button">Desmarcar</button>
         </div>
     </main>
 </body>

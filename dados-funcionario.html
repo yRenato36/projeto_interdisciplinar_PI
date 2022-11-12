@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
+
+    <!--Estilização - Variaveis-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--Estilização - Cabeçalho-->
+    <link rel="stylesheet" href="/css/cabecalho.css">
+    <!--Estilização - Navegação de telas da Empresa-->
+    <link rel="stylesheet" href="/css/empresa/navegacao-telas-empresa.css">
+    <!--Estilização - Página-->
+    <link rel="stylesheet" href="/css/empresa/dados_funcionario.css">
+    <!--Definindo título para a Página-->
+    <title>S.O.S. | Service Organization Schedule IT</title>
+</head>
+<!--Iniciando o corpo da Página-->
+<body>
+    <!--Iniciando o cabeçalho da Página-->
+    <header id="cabecalho">
+        <!--Abrindo uma tag de Navegação-->
+        <nav>
+            <!--Criando um LINK para a Página "pagina-inicial-funcionario"-->
+            <a href="/pagina-principal-funcionario.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+        </nav>
+        <nav>
+            <!--Criando um LINK para a Página "compromissos-funcionario"-->
+            <a href="/pagina-inicial-empresa.html"><img src="/image/icon-person.png" alt="Icone"></a>
+            <a href="/pagina-inicial-empresa.html"><strong>Nome do Usuário</strong></a>
+        </nav>
+    </header>
+    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+    <div id="auxiliar">
+        <!--Iniciando uma caixa para agrupar as opções de navegação-->
+        <div class="opcoes-navegacao">
+            <!--Imagem do logo da empresa-->
+            <img class="logo" src="/image/icon-person.png" alt="Logo da Empresa">
+            <!--Nome fantasia da Empresa-->
+            <strong class="nome-empresa">Nome da Empresa</strong>
+            <!--Abrindo uma tag de Navegação-->
+            <nav>
+                <!--Links de navegação das telas da empresa-->
+                <a href="/pagina-inicial-empresa.html"><strong>Página Inicial</strong></a>
+                <hr>
+                <a href="/agenda-empresa.html"><strong>Agenda da Empresa</strong></a>
+                <hr>
+                <a href="/compromissos-empresa.html"><strong>Compromisso Marcados</strong></a>
+                <hr>
+                <a href="/ficha-observacoes-empresa.html"><strong>Ficha de Observação</strong></a>
+                <hr>
+                <a href="/dados-funcionario.html"><strong>Dados dos Funcionarios</strong></a>
+                <hr>
+                <a href="/dados-empresa.html"><strong>Dados da Empresa</strong></a>
+                <hr>
+                <a href="/pagina-principal-usuario.html"><button type="button">Sair</button></a>
+            </nav>
+        </div>
+        <!--Iniciando a caixa principal da Página-->
+        <main id="principal">
+            <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+            <div class="barra-superior">
+                <!--Criando titulo para a pagina-->
+                <h1>Dados dos Funcionarios</h1>
+                <!--Abrindo uma tag de Formulário para entrada de dados-->
+                <form action="" id="seletor-agenda">
+                    <!--Criando caixas para selecionar Agendas -->
+                    <select name="agenda" id="agenda">
+                        <option value=" " >Selecione um Funcionario</option>
+                        <option value="1" >Funcionario 01</option>
+                        <option value="2">Funcionario 02</option>
+                        <option value="3">Funcionario 03</option>
+                        <option value="4">Funcionario 04</option>
+                        <option value="5">Funcionario 05</option>
+                    </select>
+                </form>
+            </div>
+            <hr>
+            <!--Abrindo uma tag de Formulário para entrada de dados-->
+            <form id="dados-funcionario" action="">
+                <!--Criando um conjunto de campos-->
+                <fieldset class="contato-funcionario">
+                    <!--Criando o título para o grupo de campos-->
+                    <legend>Contato</legend>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="telefone-funcionario">Tefone <small>*(Apenas números)</small></label>
+                        <!--Criando caixas de entrada de dados - Tefone-->
+                        <input disabled required name="telefone-funcionario" id="telefone-funcionario" type="tel" placeholder="(99)9.9999-9999">
+                    </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="email-funcionario">E-mail</label>
+                        <!--Criando caixas de entrada de dados - E-mail-->
+                        <input disabled required name="email-funcionario" id="email-funcionario" type="email">
+                    </div>
+                </fieldset>
+                <!--Criando um conjunto de campos-->
+                <fieldset class="login-acesso-funcionario">
+                    <!--Criando o título para o grupo de campos-->
+                    <legend>Login de Acesso</legend>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="username-funcionario">Username <small>*(mínimo cinco caracteres)</small></label>
+                        <!--Criando caixas de entrada de dados - Senha -->
+                        <input disabled required name="username-funcionario" id="username-funcionario" type="text">
+                    </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="senha-funcionario">Senha <small>*(mínimo cinco caracteres)</small></label>
+                        <!--Criando caixas de entrada de dados - Senha -->
+                        <input disabled required name="senha-funcionario" id="senha-funcionario" type="password" pattern="[a-zA-Z0-9]{5}">
+                    </div>
+                </fieldset>
+            </form> 
+            <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+            <div class="botao">
+                <!--Botão ira tirar os "disabled" dos inputs e dos outro botões-->
+                <button id="alterar-meus-dados" type="button">Alterar</button>
+                <!--Ira cancelar a alteração-->
+                <a href="/pagina-inicial-empresa.html"><button disabled type="button">Cancelar</button></a>
+                <!--Ira salvar a alteração-->
+                <button id="salvar-meus-dados" disabled form="meus-dados" type="submit">Salvar</button>
+            </div>
+            <hr>
+            <!--Abrindo um formulario de dados-->
+            <form id="meu-endereco" action="">
+                <!--Criando um conjunto de campos-->
+                <fieldset>
+                    <!--Criando o título para o grupo de campos-->
+                    <legend>Meu Endereço</legend>
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="cep-funcionario">CEP <small>*(Apenas números)</small></label>
+                        <!--Criando caixas de entrada de dados - CEP -->
+                        <input disabled required type="text" name="cep-funcionario" id="cep-funcionario" placeholder="xxxxx-xxx" pattern="[0-9]{8}">
+                    </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="estado-funcionario">Estado</label>
+                        <!--Criando caixas de entrada de dados - Estado -->
+                        <input disabled required type="text" name="estado-funcionario" id="estado-funcionario">
+                    </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="cidade-funcionario">Cidade</label>
+                        <!--Criando caixas de entrada de dados - Cidade-->
+                        <input disabled required type="text" name="cidade-funcionario" id="cidade-funcionario">
+                    </div>
+                    <div>
+                        <label for="bairro-funcionario">Bairro</label>
+                        <!--Criando caixas de entrada de dados - Bairro-->
+                        <input disabled required type="text" name="bairro-funcionario" id="bairro-funcionario">
+                    </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="endereco-funcionario">Endereço</label>
+                        <!--Criando caixas de entrada de dados - Endereço-->
+                        <input disabled required type="text" name="endereco-funcionario" id="endereco-funcionario">
+                    </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="numero-funcionario">Número</label>
+                        <!--Criando caixas de entrada de dados - Numero-->
+                        <input disabled required type="text" name="numero-funcionario" id="numero-funcionario" pattern="{0-9}">
+                    </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div>
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="complemento-funcionario">Completo <small>*(opcional)</small></label>
+                        <!--Criando caixas de entrada de dados - Complemento-->
+                        <textarea disabled name="complemento-funcionario" id="complemento-funcionario" ></textarea>
+                    </div>
+                </fieldset>
+            </form>
+            <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+            <div class="botao">
+                <!--Botão ira tirar os "disabled" dos inputs e dos outro botões-->
+                <button id="alterar-meu-endereco" type="button">Alterar</button>
+                <!--Ira cancelar a alteração-->
+                <a href="/pagina-inicial-empresa.html"><button disabled type="button">Cancelar</button></a>
+                <!--Ira salvar a alteração-->
+                <button id="salvar-meu-endereco" disabled form="meu-endereco" type="submit">Salvar</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

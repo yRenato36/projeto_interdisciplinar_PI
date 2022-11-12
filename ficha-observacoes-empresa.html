@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
+
+    <script src="/scripts/ficha-observacao.js" defer></script>
+
     <!--Estilização - Variaveis-->
     <link rel="stylesheet" href="/css/main.css">
     <!--Estilização - Cabeçalho-->
@@ -46,6 +50,8 @@
                 <hr>
                 <a href="/ficha-observacoes-empresa.html"><strong>Ficha de Observação</strong></a>
                 <hr>
+                <a href="/dados-funcionario.html"><strong>Dados dos Funcionarios</strong></a>
+                <hr>
                 <a href="/dados-empresa.html"><strong>Dados da Empresa</strong></a>
                 <hr>
                 <a href="/pagina-principal-usuario.html"><button type="button">Sair</button></a>
@@ -58,9 +64,9 @@
                 <!--Criando titulo para a pagina-->
                 <h1>Ficha de Observação</h1>
                 <!--Abrindo uma tag de Formulário para entrada de dados-->
-                <form action="" id="schedule-selection">
-                    <!--Criando caixas para selecionar dados - Agenda -->
-                    <select name="schedule" id="schedule">
+                <form action="" id="seletor-agenda">
+                    <!--Criando caixas para selecionar Agendas -->
+                    <select name="agenda" id="agenda">
                         <option value="1" >Todas as Agendas</option>
                         <option value="2">Agenda 01</option>
                         <option value="3">Agenda 02</option>
@@ -71,19 +77,33 @@
                 </form>
             </div>
             <hr>
-            <h2>Solicitar informação ao usuário <small>(até 20 caracteres)</small></h2>
-            <form action="" id="observation-sheet-content">
-                <div>
-                    <label for="one">1.</label>
-                    <input required type="text" name="one" id="one" placeholder="Faça uma pergunta" pattern="{20}">
+            <!--Criando titulo para o formulario abaixo-->
+            <h2>Solicitar informação ao cliente <small>(máximo 5 perguntas)</small></h2>
+            <!--Abrindo uma tag de Formulário para entrada de dados-->
+            <form action="" id="ficha-observacao">
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                <div id="conjunto-perguntas">
+                    <!--Criando texto para caso o numero maximo de perguntas for atingido-->
+                    <label id="label-maximo">*O número máximo de perguntas foi atingido*</label>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                    <div class="item-pergunta">
+                        <!--Criando caixas de entrada de dados - Perguntas-->
+                        <input type="text" placeholder="Faça uma pergunta">
+                    </div>
                 </div>
-                <button type="submit">Mais uma pergunta</button>
+                <!--Criando Botão para adicionar pergunta-->
+                <button id="add-pergunta" type="button">Mais uma pergunta</button>
+
+                <label id="label-erro">*Os campos não foram preenchidos corretamente*</label>
             </form>
+            <!--Iniciando uma caixa auxiliar para estilizar melhor-->
             <div class="button" form="home-page">
-                <button type="button">Cancelar</button>
-                <button type="button">Salvar</button>
+                <!--Criando botão para cancelar as perguntas feitas-->
+                <a href="/ficha-observacoes-empresa.html"><button type="button">Cancelar</button></a>
+                <button id="salvar-ficha-observacao" type="button">Salvar</button>
             </div>
         </main>
     </div>
+ 
 </body>
 </html>

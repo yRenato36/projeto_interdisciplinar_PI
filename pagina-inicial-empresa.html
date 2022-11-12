@@ -5,57 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/styles/main.css"><!--Variaveis-->
-    <link rel="stylesheet" href="/styles/shared/header.css"><!--Cabeçalho-->
-    <link rel="stylesheet" href="/styles/shared/company-management-options.css">
-    <link rel="stylesheet" href="/styles/partials/company-screen-home-page.css"><!--Estilização so para esta tela-->
-    
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
+    <!--Estilização - Variaveis-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--Estilização - Cabeçalho-->
+    <link rel="stylesheet" href="/css/cabecalho.css">
+    <!--Estilização - Navegação de telas da Empresa-->
+    <link rel="stylesheet" href="/css/empresa/navegacao-telas-empresa.css">
+    <!--Estilização - Página-->
+    <link rel="stylesheet" href="/css/empresa/pagina-inicial-empresa.css">
+
+    <!--Definindo título para a Página-->
     <title>S.O.S. | Service Organization Schedule IT</title>
 </head>
-<body id="company-screen-home-page">
-    <header id="header-content">
-        <nav class="site-information">
-            <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+<!--Iniciando o corpo da Página-->
+<body>
+    <!--Iniciando o cabeçalho da Página-->
+    <header id="cabecalho">
+        <!--Abrindo uma tag de Navegação-->
+        <nav>
+            <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
+            <a href="/pagina-principal-usuario.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+        </nav>
+        <nav>
+            <!--Criando um LINK para a Página "compromissos-usuario"-->
+            <a href="/pagina-inicial-empresa.html"><img src="/image/icon-person.png" alt="Icone"></a>
+            <a href="/pagina-inicial-empresa.html"><strong>Nome do Usuário</strong></a>
         </nav>
     </header>
-    <div id="assistant">
-        <div class="management-options">
+    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+    <div id="auxiliar">
+        <!--Iniciando uma caixa para agrupar as opções de navegação-->
+        <div class="opcoes-navegacao">
+            <!--Imagem do logo da empresa-->
             <img class="logo" src="/image/icon-person.png" alt="Logo da Empresa">
-            <strong class="company-name">Nome da Empresa</strong>
+            <!--Nome fantasia da Empresa-->
+            <strong class="nome-empresa">Nome da Empresa</strong>
+            <!--Abrindo uma tag de Navegação-->
             <nav>
-                <a href="/company-screen-home-page.html"><strong>Home Page</strong></a>
+                <!--Links de navegação das telas da empresa-->
+                <a href="/pagina-inicial-empresa.html"><strong>Página Inicial</strong></a>
                 <hr>
-                <a href="/company-screen-schedule.html"><strong>Agenda da Empresa</strong></a>
+                <a href="/agenda-empresa.html"><strong>Agenda da Empresa</strong></a>
                 <hr>
-                <a href="/company-screen-appointments-scheduled.html"><strong>Compromisso Marcados</strong></a>
+                <a href="/compromissos-empresa.html"><strong>Compromisso Marcados</strong></a>
                 <hr>
-                <a href="/company-screen-observation-sheet.html"><strong>Ficha de Observação</strong></a>
+                <a href="/ficha-observacoes-empresa.html"><strong>Ficha de Observação</strong></a>
                 <hr>
-                <a href="/company-screen-data.html"><strong>Dados da Empresa</strong></a>
+                <a href="/dados-funcionario.html"><strong>Dados dos Funcionarios</strong></a>
                 <hr>
-                <a href="/user-screen-home-page.html"><button type="button">Sair</button></a>
+                <a href="/dados-empresa.html"><strong>Dados da Empresa</strong></a>
+                <hr>
+                <a href="/pagina-principal-usuario.html"><button type="button">Sair</button></a>
             </nav>
         </div>
-        <main id="container">
-            <h1>Home Page</h1>
+        <!--Iniciando a caixa principal da Página-->
+        <main id="principal">
+            <!--Criando titulo para a pagina-->
+            <h1>Pagina Inicial</h1>
+            <!--Linha-->
             <hr>
-            <form action="" id="home-page">
-                <label for="fantasy-name">Nome Fantasia</label>
-                <input required type="text" name="fantasy-name" id="fantasy-name">
-
-                <label for="profile-picture">Imagem de Perfil <small>*(Logo)</small></label>
-                <input required type="file" name="profile-picture" id="profile-picture">
-
-                <label for="companys-image">Imagens da Empresa</label>
-                <input type="file" name="companys-image" id="companys-image">
-
-                <label for="about-company">Sobre da Empresa <small>*(texte informativo aos usuários)</small></label>
-                <textarea  name="about-company" id="about-company"></textarea>
+            <!--Abrindo uma tag de Formulário para entrada de dados-->
+            <form action="" id="pagina-inical">
+                <!--Criando textos relacionados aos inputs-->
+                <label for="nome-fantasia">Nome Fantasia</label>
+                <!--Criando caixas de entrada de dados - Nome Fantasia-->
+                <input disabled required type="text" name="nome-fantasia" id="nome-fantasia">
+                <!--Criando textos relacionados aos inputs-->
+                <label for="imagem-perfil-logo">Imagem de Perfil <small>*(Logo - link)</small></label>
+                <!--Criando caixas de entrada de dados - Imagem de Perfil-->
+                <input disabled required type="url" name="imagem-perfil-logo" id="imagem-perfil-logo">
+                <!--Criando textos relacionados aos inputs-->
+                <label for="imagem-empresa">Imagens da Empresa <small>*(link)</small></label>
+                <!--Criando caixas de entrada de dados - Imagens da Empresa-->
+                <input disabled type="url" name="imagem-empresa" id="imagem-empresa">
+                <!--Criando textos relacionados aos inputs-->
+                <label for="sobre-empresa">Sobre da Empresa <small>*(texte informativo aos usuários)</small></label>
+                <!--Criando caixas de entrada de dados - Sobre da Empresa-->
+                <textarea disabled name="sobre-empresa" id="sobre-empresa"></textarea>
             </form>
-            <div class="button" form="home-page">
-                <button type="button">Cancelar</button>
-                <button type="button">Salvar</button>
+            <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+            <div class="botao" form="pagina-inical">
+                <!--Botão para habilitar a edição e interações com as outras partes da pagina-->
+                <button type="button">Alterar</button>
+                <!--Botão para resetar a Pagina-->
+                <a href="/pagina-inicial-empresa.html"><button disabled type="button">Cancelar</button></a>
+                <!--Botão para salvar todas as informações/dados preenchidos-->
+                <button disabled type="button">Salvar</button>
             </div>
         </main>
     </div>

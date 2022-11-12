@@ -5,42 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/styles/main.css"><!--Variaveis-->
-    <link rel="stylesheet" href="/styles/shared/header.css"><!--Cabeçalho-->
-    <link rel="stylesheet" href="/styles/shared/company-management-options.css">
-    <link rel="stylesheet" href="/styles/partials/company-screen-data.css"><!--Estilização so para esta tela-->
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
+    <!--Estilização - Variaveis-->
+    <link rel="stylesheet" href="/css/main.css">
+    <!--Estilização - Cabeçalho-->
+    <link rel="stylesheet" href="/css/cabecalho.css">
+    <!--Estilização - Navegação de telas da Empresa-->
+    <link rel="stylesheet" href="/css/empresa/navegacao-telas-empresa.css">
+    <!--Estilização - Página-->
+    <link rel="stylesheet" href="/css/empresa/dados-empresa.css">
+    <!--Definindo título para a Página-->
     <title>S.O.S. | Service Organization Schedule IT</title>
 </head>
-<body id="company-data">
-    <header id="header-content">
-        <nav class="site-information">
-            <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+<!--Iniciando o corpo da Página-->
+<body>
+    <!--Iniciando o cabeçalho da Página-->
+    <header id="cabecalho">
+        <!--Abrindo uma tag de Navegação-->
+        <nav>
+            <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
+            <a href="/pagina-principal-usuario.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+        </nav>
+        <nav>
+            <!--Criando um LINK para a Página "compromissos-usuario"-->
+            <a href="/pagina-inicial-empresa.html"><img src="/image/icon-person.png" alt="Icone"></a>
+            <a href="/pagina-inicial-empresa.html"><strong>Nome do Usuário</strong></a>
         </nav>
     </header>
-    <div id="assistant">
-        <div class="management-options">
+    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+    <div id="auxiliar">
+        <!--Iniciando uma caixa para agrupar as opções de navegação-->
+        <div class="opcoes-navegacao">
+            <!--Imagem do logo da empresa-->
             <img class="logo" src="/image/icon-person.png" alt="Logo da Empresa">
-            <strong class="company-name">Nome da Empresa</strong>
+            <!--Nome fantasia da Empresa-->
+            <strong class="nome-empresa">Nome da Empresa</strong>
+            <!--Abrindo uma tag de Navegação-->
             <nav>
-                <a href="/company-screen-home-page.html"><strong>Home Page</strong></a>
+                <!--Links de navegação das telas da empresa-->
+                <a href="/pagina-inicial-empresa.html"><strong>Página Inicial</strong></a>
                 <hr>
-                <a href="/company-screen-schedule.html"><strong>Agenda da Empresa</strong></a>
+                <a href="/agenda-empresa.html"><strong>Agenda da Empresa</strong></a>
                 <hr>
-                <a href="/company-screen-appointments-scheduled.html"><strong>Compromisso Marcados</strong></a>
+                <a href="/compromissos-empresa.html"><strong>Compromisso Marcados</strong></a>
                 <hr>
-                <a href="/company-screen-observation-sheet.html"><strong>Ficha de Observação</strong></a>
+                <a href="/ficha-observacoes-empresa.html"><strong>Ficha de Observação</strong></a>
                 <hr>
-                <a href="/company-screen-data.html"><strong>Dados da Empresa</strong></a>
+                <a href="/dados-funcionario.html"><strong>Dados dos Funcionarios</strong></a>
                 <hr>
-                <a href="/user-screen-home-page.html"><button type="button">Sair</button></a>
+                <a href="/dados-empresa.html"><strong>Dados da Empresa</strong></a>
+                <hr>
+                <a href="/pagina-principal-usuario.html"><button type="button">Sair</button></a>
             </nav>
         </div>
-        <main id="container">
-            <div class="top-bar">
+        <!--Iniciando a caixa principal da Página-->
+        <main id="principal">
+            <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+            <div class="barra-superior">
+                <!--Criando titulo para a pagina-->
                 <h1>Dados da Empresa</h1>
-                <form action="" id="schedule-selection">
-                    <select name="schedule" id="schedule">
+                <!--Abrindo uma tag de Formulário para entrada de dados-->
+                <form action="" id="seletor-agenda">
+                    <!--Criando caixas para selecionar Agendas -->
+                    <select name="agenda" id="agenda">
                         <option value="1" >Todas as Agendas</option>
                         <option value="2">Agenda 01</option>
                         <option value="3">Agenda 02</option>
@@ -51,83 +79,87 @@
                 </form>
             </div>
             <hr>
-            <form action="" id="contact-data-management">
+            <!--Abrindo uma tag de Formulário para entrada de dados-->
+            <form action="" id="gerenciamento-dados-contato">
+                <!--Criando um conjunto de campos-->
                 <fieldset>
+                    <!--Criando o título para o grupo de campos-->
                     <legend>Contato</legend>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="contact-full-name">Nome Completo</label>
-                        <input required type="text" name="contact-full-name" id="contact-full-name">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="nome-completo-contato">Nome Completo</label>
+                        <input required disabled type="text" name="nome-completo-contato" id="nome-completo-contato">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="contact-email">E-mail para Contato</label>
-                        <input required type="email" name="contact-email" id="contact-email">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="email-contato">E-mail para Contato</label>
+                        <!--Criando caixas de entrada de dados - E-mail para Contato-->
+                        <input required disabled type="email" name="email-contato" id="email-contato">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="contact-phone">Telefone <small>*(Opcional)</small></label>
-                        <input required type="tel" name="contact-phone" id="contact-phone" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" placeholder="(00) 0000-0000">
-                    </div>
-                    <div>
-                        <label for="contact-cell">Celular <small>*(Apenas números)</small></label>
-                        <input required type="tel" name="contact-cell" id="contact-cell" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" placeholder="(00) 0.0000-0000">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="telefone-contato">Telefone <small>*(Opcional)</small></label>
+                        <!--Criando caixas de entrada de dados - Telefone-->
+                        <input required disabled type="tel" name="telefone-contato" id="telefone-contato" pattern="[0-9]{2}[9]{1}[0-9]{4}[0-9]{4}" placeholder="(00) 0000-0000">
                     </div>
                 </fieldset>
-                <div class="buttons">
-                    <button type="submit">Salvar</button>
-                    <button type="button"><a href="/company-screen-data.html"></a>Cancelar</a></button>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                <div class="botoes">
+                    <button type="button">Alterar</button>
+                    <a href="/dados-empresa.html"><button disabled type="button">Cancelar</button></a>
+                    <button disabled type="submit">Salvar</button>
                 </div>
             </form>
-            <form action="" id="bank-details-management">
+            <!--Abrindo uma tag de Formulário para entrada de dados-->
+            <form action="" id="gerencimaneto-dados-bancarios">
+                <!--Criando um conjunto de campos-->
                 <fieldset>
+                    <!--Criando o título para o grupo de campos-->
                     <legend>Dados Bancários</legend>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="bank">Banco</label>
-                        <input required type="text" name="bank" id="bank">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="banco">Banco</label>
+                        <!--Criando caixas de entrada de dados - Banco-->
+                        <input disabled required type="text" name="banco" id="banco">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="agency">Agência</label>
-                        <input required type="text" name="agency" id="agency">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="agencia">Agência</label>
+                        <!--Criando caixas de entrada de dados - Agência-->
+                        <input disabled required type="text" name="agencia" id="agencia">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="digit">Dígito</label>
-                        <input required type="text" name="digit" id="digit">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="digito">Dígito</label>
+                        <!--Criando caixas de entrada de dados - Dígito-->
+                        <input disabled required type="text" name="digito" id="digito">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="account-type">Tipo de Conta</label>
-                        <input required type="text" name="account-type" id="account-type">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="tipo-conta">Tipo de Conta</label>
+                        <!--Criando caixas de entrada de dados - Tipo de Conta-->
+                        <input disabled required type="text" name="tipo-conta" id="tipo-conta">
                     </div>
+                    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
-                        <label for="account-number">Número da Conta</label>
-                        <input required type="text" name="account-number" id="account-number">
-                    </div>
-                </fieldset>
-                <div class="buttons">
-                    <button type="submit">Salvar</button>
-                    <button type="button"><a href="/company-screen-data.html"></a>Cancelar</a></button>
-                </div>
-            </form>
-            <form action="" id="access-login">
-                <fieldset>
-                    <legend>Login de Acesso</legend>
-                    <div>
-                        <label for="company-email">E-mail</label>
-                        <input required type="email" name="company-email" id="company-email">
-                    </div>
-                    <div>
-                        <label for="company-username">Username <small>*(mínimo cinco caracteres)</small></label>
-                        <input required name="company-username" id="company-username" type="text">
-                    </div>
-                    <div>
-                        <label for="company-password">Senha <small>*(mínimo cinco caracteres)</small></label>
-                        <input required name="company-password" id="company-password" type="password" pattern="[a-zA-Z0-9]{5}">
-                    </div>
-                    <div>
-                        <label for="company-password-confirm">Digite a senha novamente</label>
-                        <input required name="company-password-confirm" id="company-password-confirm" type="password">
+                        <!--Criando textos relacionados aos inputs-->
+                        <label for="numero-conta">Número da Conta</label>
+                        <!--Criando caixas de entrada de dados - Número da Conta-->
+                        <input disabled required type="text" name="numero-conta" id="numero-conta">
                     </div>
                 </fieldset>
-                <div class="buttons">
-                    <button type="submit">Salvar</button>
-                    <button type="button"><a href="/company-screen-data.html"></a>Cancelar</a></button>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                <div class="botoes">
+                    <button type="button">Alterar</button>
+                    <a href="/dados-empresa.html"><button disabled type="button">Cancelar</button></a>
+                    <button disabled type="submit">Salvar</button>
                 </div>
             </form>
         </main>

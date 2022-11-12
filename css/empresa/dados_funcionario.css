@@ -4,43 +4,89 @@ body {
     background-color: var(--color-background-one);
 }
 
-.barra-superior a:nth-child(2) strong {
-    background-color: var(--color-background-three);
-}
-
-#principal {
+#auxiliar {
     max-width: 1440px;
     min-width: 1100px;
 
     margin: 20px auto;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
 
     background-color: var(--color-background-two);
     border: solid 2px var(--color-botder-container);
     border-radius: 30px;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 20px auto 50px 20px auto 50px;
+    padding: 20px;
 }
 
 #principal > hr {
-    width: 100%;
-    height: 1px;
+    margin: 10px 0;
+
     border: 0;
-    margin: auto;
-    background-color: var(--color-border-buttons);
-    opacity: 80%;
+    height: 1px;
+    width: 100%;
+
+    background-color: var(--color-botder-container);
+    opacity: 50%;
 }
 
-#meus-dados {
+.barra-superior {
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-row: 1fr;
+
+    margin-bottom: 10px;
+}
+
+.barra-superior > h1 {
+    color: var(--color-text-title);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-family-title);
+
+    margin: auto;
+}
+.barra-superior form {
+    margin: 0;
+}
+
+.barra-superior form select {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    color: var(--color-text-label);
+    font-size: .8rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+
+    background-color: var(--color-background-buttons);
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.barra-superior form select:hover {
+    background-color: var(--color-background-three);
+}
+
+#dados-funcionario {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 20px;
 }
 
-#meus-dados > fieldset {
+#dados-funcionario > fieldset {
     margin: 20px 0;
     padding: 20px;
 
@@ -53,7 +99,7 @@ body {
     grid-row: 1fr 1fr;
 }
 
-#meus-dados > fieldset > legend {
+#dados-funcionario > fieldset > legend {
     margin-left: 20px;
 
     color: var(--color-text-title);
@@ -62,14 +108,14 @@ body {
     font-family: var(--font-family-title);
 }
 
-#meus-dados > fieldset > div {
+#dados-funcionario > fieldset > div {
     margin:  10px auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
 
-#meus-dados > fieldset > div > label {
+#dados-funcionario > fieldset > div > label {
     padding-top: 10px;
 
     color: var(--color-text-label);
@@ -81,7 +127,7 @@ body {
     margin-top: auto;
 }
 
-#meus-dados > fieldset > div > input {
+#dados-funcionario > fieldset > div > input {
     height: 40px;
     width: 300px;
 
@@ -99,11 +145,11 @@ body {
     cursor: pointer;
 }
 
-#meus-dados > fieldset > div > input:hover {
+#dados-funcionario > fieldset > div > input:hover {
     background-color: var(--color-background-three);
 }
 
-#meus-dados > hr {
+#dados-funcionario > hr {
     border: 0;
     height: 1px;
     width: 100%;
@@ -261,4 +307,3 @@ div.botao button a {
     text-decoration: none;
     cursor: pointer;
 }
-

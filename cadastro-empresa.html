@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
+
     <!--Estilização - Variaveis-->
     <link rel="stylesheet" href="/css/main.css">
     <!--Estilização - Cabeçalho-->
@@ -23,7 +25,7 @@
         <!--Abrindo uma tag de Navegação-->
         <nav>
             <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
-            <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
+            <a href="/pagina-principal-usuario.html"><strong class="short-name">S.O.S. I.T.</strong></a>
         </nav>
     </header> 
     <!--Iniciando a caixa principal da Página-->
@@ -135,16 +137,16 @@
                     <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
                         <!--Criando textos relacionados aos inputs-->
-                        <label for="logo-empresa">Imagem de Perfil <small>*(Logo)</small></label>
+                        <label for="logo-empresa">Imagem de Perfil <small>*(Logo - link)</small></label>
                         <!--Criando caixas de entrada de dados - Imagem de Perfil-->
-                        <input required type="file" name="logo-empresa" id="logo-empresa">
+                        <input required type="url" name="logo-empresa" id="logo-empresa">
                     </div>
                     <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                     <div>
                         <!--Criando textos relacionados aos inputs-->
-                        <label for="imagem-empresa">Imagens da Empresa</label>
+                        <label for="imagem-empresa">Imagens da Empresa <small>*(link)</small></label>
                         <!--Criando caixas de entrada de dados - Imagens da Empresa-->
-                        <input type="file" name="imagem-empresa" id="imagem-empresa">
+                        <input type="url" name="imagem-empresa" id="imagem-empresa">
                     </div>
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
@@ -258,7 +260,7 @@
                 <!--Criando botão voltar a pagina anterior-->
                 <button type="button"><a href="/">Voltar</a></button>
                 <!--Criando botão para salvar as informações fornecidas-->
-                <button type="submit" form="cadastro-empresa">Salvar</button>
+                <button type="submit" form="cadastro-empresa"><a href="cadastro-funcionario.html">Continuar</a></button>
             </div>
         </form>
     </main>

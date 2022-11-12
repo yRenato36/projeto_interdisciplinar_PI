@@ -1,10 +1,10 @@
-#company-screen-schedule {
+body {
     margin: 20px auto;
     padding: 0 20px;
     background-color: var(--color-background-one);
 }
 
-#assistant {
+#auxiliar {
     max-width: 1440px;
     min-width: 1100px;
 
@@ -14,71 +14,7 @@
     column-gap: 20px;
 }
 
-#company-content {
-    margin-right: 20px;
-    background-color: var(--color-background-two);
-    border: solid 2px var(--color-botder-container);
-    border-radius: 30px;
-    padding: 20px;
-}
-
-#company-content img.logo {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    background-color: var(--color-background-one);
-    border: solid 1.5px var(--color-botder-container);
-    border-radius: 50%;
-}
-
-#company-content strong.company-name {
-    display: block;
-    margin-top: 10px;
-    color: var(--color-text-title);
-    font-size: 1.4rem;
-    font-weight: 700;
-    font-family: var(--font-family-title);
-    text-align: center;
-}
-
-#company-content div.row-one, div.row-two, div.row-three, div.row-four, div.row-five {
-    width: 100%;
-    margin: 10px 0;
-    border-bottom: solid 1px var(--color-botder-container);
-    opacity: 50%;
-}
-
-#company-content strong.about-company, strong.company-location, strong.images-company, strong.contact-company {
-    display: block;
-    margin-top: 10px;
-    color: var(--color-text-title);
-    font-size: 1.1rem;
-    font-weight: 700;
-    font-family: var(--font-family-title);
-    text-align: center;
-}
-
-#company-content p.about-company-content, p.company-location-content, p.contact-company-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5px;
-    color: var(--color-text-description);
-    font-size: 1rem;
-    font-weight: normal;
-    font-family: var(--font-family-description);
-    line-height: 1.2rem;
-    text-align: center;
-}
-
-#company-content div.images-company-content {
-    width: 80%;
-    height: 150px;
-    margin: 5px auto;
-    border: solid 1px black;
-}
-
-#container {
+#principal {
     margin-left: 0;
     background-color: var(--color-background-two);
     border: solid 2px var(--color-botder-container);
@@ -88,7 +24,7 @@
     grid-template-columns: 1fr 3.5fr;
 }
 
-#search-schedule {
+#selecionar-agenda {
     display: flex;
     flex-direction: column;
 }
@@ -103,12 +39,12 @@ form label {
     font-family: var(--font-family-label);
 }
 
-#search-schedule > div {
+#selecionar-agenda > div {
     display: flex;
     justify-content: space-between;
 }
 
-#search-schedule div select {
+#selecionar-agenda div select {
     width: 80%;
     height: 35px;
 
@@ -125,15 +61,15 @@ form label {
     cursor: pointer;
 }
 
-#search-schedule div select:hover {
+#selecionar-agenda div select:hover {
     background-color: var(--color-background-three);
 }
 
-#search-schedule div button:hover {
+#selecionar-agenda div button:hover {
     background-color: var(--color-background-three);
 }
 
-#search-schedule div button {
+#selecionar-agenda div button {
     height: 35px;
     width: 35px;
 
@@ -149,7 +85,7 @@ form label {
     cursor: pointer;
 }
 
-#calendar-content input {
+#calendario input {
     margin: 0 auto;
     height: 40px;
     width: 100%;
@@ -175,11 +111,11 @@ form label {
     cursor: pointer;
 }
 
-#calendar-content input:hover {
+#calendario input:hover {
     background-color: var(--color-background-three);
 }
 
-#commitment-management button {
+#gerenciamento-compromissos button {
     margin-top: 20px;
     width: 100%;
     height: 35px;
@@ -197,17 +133,17 @@ form label {
     transition: background 0.3s;
 }
 
-#commitment-management button:hover {
+#gerenciamento-compromissos button:hover {
     background-color: var(--color-background-three);
 }
 
-.right-container {
+.direita-principal {
     display: grid;
     grid-template-columns: 8fr 92fr;
     grid-template-rows: 8fr 92fr;
 }
 
-.right-container .time {
+.direita-principal .horario {
     grid-column: 1/2; 
     grid-row: 1/3;
 
@@ -217,7 +153,7 @@ form label {
     grid-template-rows: repeat(13, 1fr);
 }
 
-.right-container .week {
+.direita-principal .semana {
     grid-column: 2/3;
     grid-row: 1/2;
 
@@ -227,17 +163,17 @@ form label {
     row-gap: 5px;
 }
 
-.right-container .week hr {
+.direita-principal .semana hr {
     border: 0;
     background-color: black;
     opacity: 50%;
 }
 
-.right-container > div > span {
+.direita-principal > div > span {
     text-align: center;
 }
 
-.time {
+.horario {
     display: flex;
     align-items: end;
     justify-content: center;
@@ -245,7 +181,7 @@ form label {
     padding-left: 15px;
 }
 
-.schedule-content {
+.agenda-conteudo {
     grid-column: 2/3;
     grid-row: 2/3;
 
@@ -256,164 +192,164 @@ form label {
     margin-bottom: 1%;
 }
 
-.schedule-content hr {
+.agenda-conteudo hr {
     border: 0;
     background-color: black;
     opacity: 50%;
 }
 
-.schedule-content hr.column {
+.agenda-conteudo hr.column {
     width: 1px;
 }
 
-.schedule-content hr.row {
+.agenda-conteudo hr.row {
     height: 1px;
 }
 
-.schedule-content hr.column:hover {
+.agenda-conteudo hr.column:hover {
     width: 2px;
     background-color: blue;
     opacity: 100%;
 }
 
-.schedule-content hr.row:hover {
+.agenda-conteudo hr.row:hover {
     height: 2px;
     background-color: blue;
     opacity: 100%;
 }
 
-.schedule-content hr.column:nth-child(1) {
+.agenda-conteudo hr.column:nth-child(1) {
     grid-column: 1/2;
     grid-row: 1/49;
 }
-.schedule-content hr.column:nth-child(2) {
+.agenda-conteudo hr.column:nth-child(2) {
     grid-column: 3/4;
     grid-row: 1/49;
 }
-.schedule-content hr.column:nth-child(3) {
+.agenda-conteudo hr.column:nth-child(3) {
     grid-column: 5/6;
     grid-row: 1/49;
 }
-.schedule-content hr.column:nth-child(4) {
+.agenda-conteudo hr.column:nth-child(4) {
     grid-column: 7/8;
     grid-row: 1/49;
 }
-.schedule-content hr.column:nth-child(5) {
+.agenda-conteudo hr.column:nth-child(5) {
     grid-column: 9/10;
     grid-row: 1/49;
 }
-.schedule-content hr.column:nth-child(6) {
+.agenda-conteudo hr.column:nth-child(6) {
     grid-column: 11/12;
     grid-row: 1/49;
 }
-.schedule-content hr.column:nth-child(7) {
+.agenda-conteudo hr.column:nth-child(7) {
     grid-column: 13/14;
     grid-row: 1/49;
 }
 
-.schedule-content hr.row:nth-child(8) {
+.agenda-conteudo hr.row:nth-child(8) {
     grid-column: 1/14;
     grid-row: 1/2;
 }
 
-.schedule-content hr.row:nth-child(9) {
+.agenda-conteudo hr.row:nth-child(9) {
     grid-column: 1/14;
     grid-row: 3/4;
 }
-.schedule-content hr.row:nth-child(10) {
+.agenda-conteudo hr.row:nth-child(10) {
     grid-column: 1/14;
     grid-row: 5/6;
 }
-.schedule-content hr.row:nth-child(11) {
+.agenda-conteudo hr.row:nth-child(11) {
     grid-column: 1/14;
     grid-row: 7/8;
 }
-.schedule-content hr.row:nth-child(12) {
+.agenda-conteudo hr.row:nth-child(12) {
     grid-column: 1/14;
     grid-row: 9/10;
 }
-.schedule-content hr.row:nth-child(13) {
+.agenda-conteudo hr.row:nth-child(13) {
     grid-column: 1/14;
     grid-row: 11/12;
 }
-.schedule-content hr.row:nth-child(14) {
+.agenda-conteudo hr.row:nth-child(14) {
     grid-column: 1/14;
     grid-row: 13/14;
 }
-.schedule-content hr.row:nth-child(15) {
+.agenda-conteudo hr.row:nth-child(15) {
     grid-column: 1/14;
     grid-row: 15/16;
 }
-.schedule-content hr.row:nth-child(16) {
+.agenda-conteudo hr.row:nth-child(16) {
     grid-column: 1/14;
     grid-row: 17/18;
 }
-.schedule-content hr.row:nth-child(17) {
+.agenda-conteudo hr.row:nth-child(17) {
     grid-column: 1/14;
     grid-row: 19/20;
 }
-.schedule-content hr.row:nth-child(18) {
+.agenda-conteudo hr.row:nth-child(18) {
     grid-column: 1/14;
     grid-row: 21/22;
 }
-.schedule-content hr.row:nth-child(19) {
+.agenda-conteudo hr.row:nth-child(19) {
     grid-column: 1/14;
     grid-row: 23/24;
 }
-.schedule-content hr.row:nth-child(20) {
+.agenda-conteudo hr.row:nth-child(20) {
     grid-column: 1/14;
     grid-row: 25/26;
 }
-.schedule-content hr.row:nth-child(21) {
+.agenda-conteudo hr.row:nth-child(21) {
     grid-column: 1/14;
     grid-row: 27/28;
 }
-.schedule-content hr.row:nth-child(22) {
+.agenda-conteudo hr.row:nth-child(22) {
     grid-column: 1/14;
     grid-row: 29/30;
 }
-.schedule-content hr.row:nth-child(23) {
+.agenda-conteudo hr.row:nth-child(23) {
     grid-column: 1/14;
     grid-row: 31/32;
 }
-.schedule-content hr.row:nth-child(24) {
+.agenda-conteudo hr.row:nth-child(24) {
     grid-column: 1/14;
     grid-row: 33/34;
 }
-.schedule-content hr.row:nth-child(25) {
+.agenda-conteudo hr.row:nth-child(25) {
     grid-column: 1/14;
     grid-row: 35/36;
 }
-.schedule-content hr.row:nth-child(26) {
+.agenda-conteudo hr.row:nth-child(26) {
     grid-column: 1/14;
     grid-row: 37/38;
 }
-.schedule-content hr.row:nth-child(27) {
+.agenda-conteudo hr.row:nth-child(27) {
     grid-column: 1/14;
     grid-row: 39/40;
 }
-.schedule-content hr.row:nth-child(28) {
+.agenda-conteudo hr.row:nth-child(28) {
     grid-column: 1/14;
     grid-row: 41/42;
 }
-.schedule-content hr.row:nth-child(29) {
+.agenda-conteudo hr.row:nth-child(29) {
     grid-column: 1/14;
     grid-row: 43/44;
 }
-.schedule-content hr.row:nth-child(30) {
+.agenda-conteudo hr.row:nth-child(30) {
     grid-column: 1/14;
     grid-row: 45/46;
 }
-.schedule-content hr.row:nth-child(31) {
+.agenda-conteudo hr.row:nth-child(31) {
     grid-column: 1/14;
     grid-row: 47/48;
 }
-.schedule-content hr.row:nth-child(32) {
+.agenda-conteudo hr.row:nth-child(32) {
     grid-column: 1/14;
     grid-row: 49/50;
 }
 
-.right-container .schedule-content > div  {
+.direita-principal .agenda-conteudo > div  {
     border: solid 2px red;
     border-radius: 10px;
     background-color: blue;
@@ -425,25 +361,25 @@ form label {
     align-items: center;
 }
 
-.right-container .schedule-content > div:hover {
+.direita-principal .agenda-conteudo > div:hover {
     background-color: yellow;
 }
 
-.right-container .schedule-content > div:active {
+.direita-principal .agenda-conteudo > div:active {
     background-color: orange;
 }
 
-.right-container .schedule-content > div > span {
+.direita-principal .agenda-conteudo > div > span {
     text-align: center;
 }
 
-.right-container .schedule-content > div:nth-child(33) {
+.direita-principal .agenda-conteudo > div:nth-child(33) {
     grid-column: 12/13; /*Sabado*/
     grid-row: 2/9; /*6:00/8:00*/
     /*Desce mais para entender melhor*/
 }
 
-.right-container .schedule-content > div:nth-child(34) {
+.direita-principal .agenda-conteudo > div:nth-child(34) {
     grid-column: 8/9; /*Sabado*/
     grid-row: 17/25; /*6:00/8:00*/
     /*Desce mais para entender melhor*/
