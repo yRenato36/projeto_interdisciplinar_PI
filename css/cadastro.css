@@ -64,6 +64,20 @@ form fieldset div > input:nth-child(2) {
     padding: 10px;
 }
 
+form fieldset div > select:nth-child(2) {
+    height: 40px;
+
+    color: var(--color-text-label);
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    
+    background-color: white;
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 form > div {
     display: flex;
     align-items: center;

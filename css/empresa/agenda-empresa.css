@@ -65,13 +65,10 @@ form label {
     background-color: var(--color-background-three);
 }
 
-#selecionar-agenda div button:hover {
-    background-color: var(--color-background-three);
-}
-
 #selecionar-agenda div button {
     height: 35px;
     width: 35px;
+    margin-left: 10px;
 
     text-align: center;
     color: var(--color-border-buttons);
@@ -85,7 +82,38 @@ form label {
     cursor: pointer;
 }
 
-#calendario input {
+#selecionar-agenda div button:hover {
+    background-color: var(--color-background-three);
+}
+
+#selecionar-dia div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#selecionar-dia div img {
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+
+    text-align: center;
+    color: var(--color-border-buttons);
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+
+    background-color: var(--color-background-buttons);
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 17.5px;
+    cursor: pointer;
+}
+
+#selecionar-dia div img:hover {
+    background-color: var(--color-background-three);
+}
+
+#selecionar-dia div input {
     margin: 0 auto;
     height: 40px;
     width: 100%;
@@ -111,8 +139,14 @@ form label {
     cursor: pointer;
 }
 
-#calendario input:hover {
+#selecionar-dia input:hover {
     background-color: var(--color-background-three);
+}
+
+.semana span {
+    margin: auto;
+    padding: 2.5px 5px;
+    border-radius: 5px;
 }
 
 #gerenciamento-compromissos button {
@@ -166,7 +200,7 @@ form label {
 .direita-principal .semana hr {
     border: 0;
     background-color: black;
-    opacity: 50%;
+    opacity: 25%;
 }
 
 .direita-principal > div > span {
@@ -195,7 +229,7 @@ form label {
 .agenda-conteudo hr {
     border: 0;
     background-color: black;
-    opacity: 50%;
+    opacity: 25%;
 }
 
 .agenda-conteudo hr.column {
@@ -208,13 +242,11 @@ form label {
 
 .agenda-conteudo hr.column:hover {
     width: 2px;
-    background-color: blue;
     opacity: 100%;
 }
 
 .agenda-conteudo hr.row:hover {
     height: 2px;
-    background-color: blue;
     opacity: 100%;
 }
 

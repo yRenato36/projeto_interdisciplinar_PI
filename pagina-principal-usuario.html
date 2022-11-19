@@ -7,6 +7,8 @@
 
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
+    <script src="/scripts/validacao-login.js" defer></script>
+
     <!--Estilização - Variaveis-->
     <link rel="stylesheet" href="/css/main.css">
     <!--Estilização - Cabeçalho-->
@@ -17,7 +19,7 @@
     <title>S.O.S. | Service Organization Schedule IT</title>
 </head>
 <!--Iniciando o corpo da Página-->
-<body id="pagina-principal-usuario">
+<body id="pagina-principal-usuario" onload="verificacaoLogin()">
     <!--Iniciando o cabeçalho da Página-->
     <header id="cabecalho">
         <!--Abrindo uma tag de Navegação-->
@@ -30,13 +32,7 @@
             <a href="#contato"><strong>Contato</strong></a>
         </nav>
         <!--Abrindo uma tag de Navegação-->
-        <nav>
-            <!--Criando um LINK para a Página "cadastro-empresa"-->
-            <a href="/cadastro-empresa.html"><strong>Cadastre sua Empresa</strong></a>
-            <!--Criando um LINK para a Página "cadastro-usuario"-->
-            <a href="/cadastro-usuario.html"><strong>Criar Conta</strong></a>
-            <!--Criando um LINK para a Página "login-acesso"-->
-            <a href="/login-acesso.html"><strong>Entrar</strong></a>
+        <nav id="validacao-login">
         </nav>
     </header>
     <!--Iniciando a caixa principal da Página-->

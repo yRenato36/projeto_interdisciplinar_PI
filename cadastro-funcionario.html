@@ -37,7 +37,7 @@
             <!--Criando um conjunto de campos-->
             <fieldset>
                 <!--Criando o título para o grupo de campos-->
-                <legend>Dados Pessoais</legend>
+                <legend>Dados do Funcionario</legend>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
@@ -58,6 +58,27 @@
                     <label for="cpf-usuario">CPF <small>*(Apenas números)</small></label>
                     <!--Criando caixas de entrada de dados - CPF-->
                     <input required name="cpf-usuario" id="cpf-usuario" type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{11}">
+                </div>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                <div>
+                    <!--Criando textos relacionados aos inputs-->
+                    <label for="rg-usuario">RG <small>*(Apenas números)</small></label>
+                    <!--Criando caixas de entrada de dados - RG-->
+                    <input required name="rg-usuario" id="rg-usuario" type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{11}">
+                </div>
+                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
+                <div>
+                    <!--Criando textos relacionados aos inputs-->
+                    <label for="sexo-usuario">Sexo</label>
+                    <!--Criando caixas de entrada de dados - Sexo-->
+                    <!--Criando uma caixa de seleção para as sexualidades dos usuarios-->
+                    <select required name="sexo-usuario" id="sexo-usuario">
+                        <!--Opções de Sexo do select-->
+                        <option value="" >Selecione uma opção</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3">Nenhuma das opções</option>
+                    </select>
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
@@ -156,8 +177,8 @@
                 <!--Criando botão para salvar as informações fornecidas-->
                 <button type="submit" form="cadastro-funcionario">Salvar</button>
                 <!--Criando botão para salvar as informações fornecidas-->
-                <button type="submit" form="cadastro-funcionario">Cadastrar mais <br>
-                Funcionarios</button>
+                <a href="/cadastro-funcionario.html"><button type="submit" form="cadastro-funcionario">Cadastrar mais<br>
+                Funcionarios</button></a>
             </div>
         </form>
     </main>

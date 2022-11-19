@@ -1,184 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
-
-    <!--Script - Criação da Agenda-->
-    <script src="/scripts/criando-agenda.js" defer></script>
-    <!--Script - Calendario-->
-    <script src="/scripts/calendario.js" defer></script>
-
-    <!--Estilização - Variaveis-->
-    <link rel="stylesheet" href="/css/main.css">
-    <!--Estilização - Cabeçalho-->
-    <link rel="stylesheet" href="/css/cabecalho.css">
-    <!--Estilização - Caixa de Navegação da Empresa-->
-    <link rel="stylesheet" href="/css/empresa/navegacao-telas-empresa.css">
-    <!--Estilização - Página-->
-    <link rel="stylesheet" href="/css/empresa/agenda-empresa.css">
-    <!--Estilização - Janela Modal-->
     <link rel="stylesheet" href="/css/criando-agenda.css">
-    <!--Definindo título para a Página-->
-    <title>S.O.S. | Service Organization Schedule IT</title>
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script src="/scripts/criando-agenda.js" defer></script>
+
 </head>
-<!--Iniciando o corpo da Página-->
-<body onload="posicionandoDias()">
-    <!--Iniciando o cabeçalho da Página-->
-    <header id="cabecalho">
-        <!--Abrindo uma tag de Navegação-->
-        <nav>
-            <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
-            <a href="/html/usuario-não-logado/pagina-principal-usuario.html"><strong>S.O.S. I.T.</strong></a>
-        </nav>
-    </header>
-    <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-    <div id="auxiliar">
-        <!--Iniciando uma caixa para agrupar as opções de navegação-->
-        <div class="opcoes-navegacao">
-            <!--Imagem do logo da empresa-->
-            <img class="logo" src="/image/icon-person.png" alt="Logo da Empresa">
-            <!--Nome fantasia da Empresa-->
-            <strong class="nome-empresa">Nome da Empresa</strong>
-            <!--Abrindo uma tag de Navegação-->
-            <nav>
-                <!--Links de navegação das telas da empresa-->
-                <a href="/pagina-inicial-empresa.html"><strong>Página Inicial</strong></a>
-                <hr>
-                <a href="/agenda-empresa.html"><strong>Agenda da Empresa</strong></a>
-                <hr>
-                <a href="/compromissos-empresa.html"><strong>Compromisso Marcados</strong></a>
-                <hr>
-                <a href="/ficha-observacoes-empresa.html"><strong>Ficha de Observação</strong></a>
-                <hr>
-                <a href="/dados-funcionario.html"><strong>Dados dos Funcionarios</strong></a>
-                <hr>
-                <a href="/dados-empresa.html"><strong>Dados da Empresa</strong></a>
-                <hr>
-                <a href="/pagina-principal-usuario.html"><button type="button">Sair</button></a>
-            </nav>
-        </div>
-        <main id="principal">
-            <div class="esquerda-principal">
-                <form id="selecionar-agenda" action="">
-                    <label for="schedule">Agenda</label>
-                    <div>
-                        <select name="schedule" id="schedule">
-                                <option value="" >Selecione uma opção</option>
-                                <option value="1">Agenda 01</option>
-                                <option value="2">Agenda 02</option>
-                                <option value="3">Agenda 03</option>
-                                <option value="4">Agenda 04</option>
-                                <option value="5">Agenda 05</option>
-                        </select>
-                        <button type="button" onclick="abrirModal()">+</button>
-                    </div>
-                    <!--<button type="submit">Procurar Agenda</button>-->
-                </form>
-                <form id="selecionar-dia" action="">
-                    <label for="calendario">Calendário</label>
-                    <div>
-                        <input name="calendario" id="calendario" type="date">
-                        <img onclick="posicionandoDias()" src="/image/lupa.png" alt="Pesquisar">
-                    </div>
-                </form>
-                <form id="gerenciamento-compromissos" action="">
-                    <button type="button" id="marcar-compromisso">Marcar Compromisso</button>
-                    <button type="button">Desmarcar Compromisso</button>
-                    <button type="button">Editar Agenda</button>
-                    <button type="button">Deletar Agenda</button>
-                </form>
-            </div>
-            <div class="direita-principal">
-                <div class="horario">
-                    <span>06:00</span>
-                    <span>07:00</span>
-                    <span>08:00</span>
-                    <span>09:00</span>
-                    <span>10:00</span>
-                    <span>11:00</span>
-                    <span>12:00</span>
-                    <span>13:00</span>
-                    <span>14:00</span>
-                    <span>15:00</span>
-                    <span>16:00</span>
-                    <span>17:00</span>
-                    <span>18:00</span>
-                </div>
-                <div class="semana">
-                    <hr>
-                    <span>Seg</span>
-                    <hr>
-                    <span>Ter</span>
-                    <hr>
-                    <span>Qua</span>
-                    <hr>
-                    <span>Qui</span>
-                    <hr>
-                    <span>Sex</span>
-                    <hr>
-                    <span>Sab</span>
-                    <hr>
-                    <hr>
-                    <span id="segunda-feira">17</span>
-                    <hr>
-                    <span id="terca-feira">18</span>
-                    <hr>
-                    <span id="quarta-feira">19</span>
-                    <hr>
-                    <span id="quinta-feira">20</span>
-                    <hr>
-                    <span id="sexta-feira">21</span>
-                    <hr>
-                    <span id="sabado">22</span>
-                    <hr>
-                </div>
-                <div class="agenda-conteudo">
-                    <hr class="column">
-                    <hr class="column">
-                    <hr class="column">
-                    <hr class="column">
-                    <hr class="column">
-                    <hr class="column">
-                    <hr class="column">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <hr class="row">
-                    <div class="compromisso">
-                        <span>Compromisso marcado</span>
-                    </div>
-                    <div class="compromisso">
-                        <span>Compromisso marcado</span>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
+<body>
+    <button onclick="abrirModal()" class="btn" type="button">Clique aqui</button>
     <div id="janela-modal">
         <form action="" id="criando-agenda">
             <h1>Criando Agenda</h1>

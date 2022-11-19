@@ -1,0 +1,308 @@
+#janela-modal{
+    width: 100%;
+    height: 116%;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000009b;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 10;
+}
+
+#janela-modal.abrir {
+    
+    display: flex;
+}
+
+@keyframes abrirModal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.abrir #criando-agenda {
+    animation: abrirModal 0.5s;
+}
+
+#criando-agenda {
+    width: 80%; 
+    min-width: 550px;
+    max-width: 750px;
+
+    background-color: rgba(255, 255, 255, 0.799);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto;
+}
+
+#criando-agenda > div > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#criando-agenda h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-family-title);
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#criando-agenda > label {
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+    color: black;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#criando-agenda > input, #criando-agenda > textarea {
+    width: 100%;
+    margin-bottom: 10px;
+
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    text-align: center;
+    
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#criando-agenda > hr {
+    border: 0;
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    opacity: 50%;
+}
+
+#criando-agenda .dias-da-semana {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#criando-agenda div:last-child {
+    margin-top: 10px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#criando-agenda div:last-child button {
+    width: 80px;
+    height: 40px;
+
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 20px;
+
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: var(--font-family-button);
+
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#criando-agenda div:last-child button:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.dias-da-semana > button {
+    width: 80px;
+    height: 35px;
+
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 20px;
+
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: var(--font-family-button);
+
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dias-da-semana > button:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+#criando-agenda h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: var(--font-family-title);
+    color: black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.inicio-fim {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.inicio-fim label {
+    font-size: .8rem;
+    font-weight: normal;
+    font-family: var(--font-family-label);
+    color: black;
+}
+
+.inicio-fim select {
+    color: var(--color-text-label);
+    font-size: 1rem;
+    font-weight: normal;;
+    font-family: var(--font-family-label); 
+    text-align: center;
+    
+    background-color: white;
+    border: solid 1px var(--color-border-buttons);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.adiciona-horario, .subtrai-horario {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 20px;
+
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: var(--font-family-button);
+
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.adiciona-horario:hover, .subtrai-horario:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-todos {
+    display: none;
+    flex-direction: column;
+}
+
+#horarios-todos.abrir {
+    display: flex;
+}
+
+#button-todos.abrir {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-seg {
+    display: none;
+    flex-direction: column;
+}
+
+#button-seg.abrir {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-seg.abrir{
+    display: flex;
+}
+
+#horarios-ter {
+    display: none;
+    flex-direction: column; 
+}
+
+#button-ter.abrir {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-ter.abrir{
+    display: flex;
+}
+
+#horarios-qua {
+    display: none;
+    flex-direction: column;
+}
+
+#button-qua.abrir {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-qua.abrir{
+    display: flex;
+}
+
+#horarios-qui {
+    display: none;
+    flex-direction: column;
+}
+
+#button-qui.abrir {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-qui.abrir{
+    display: flex;
+}
+
+#horarios-sex {
+    display: none;
+    flex-direction: column; 
+}
+
+#button-sex.abrir {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-sex.abrir{
+    display: flex;
+}
+
+#horarios-sab {
+    display: none;
+    flex-direction: column; 
+}
+
+#button-sab.abrir {
+    background-color: rgb(218, 218, 218);
+}
+
+#horarios-sab.abrir{
+    display: flex;
+}
+

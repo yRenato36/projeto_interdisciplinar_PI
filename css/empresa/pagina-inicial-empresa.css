@@ -85,7 +85,6 @@ body {
     padding: 10px;
 
     transition: background 0.3s;
-    cursor: pointer;
 } 
 
 #pagina-inical > input:hover {
@@ -107,7 +106,6 @@ body {
     padding: 10px;
 
     transition: background 0.3s;
-    cursor: pointer;
 }
 
 #pagina-inical > textarea:hover {

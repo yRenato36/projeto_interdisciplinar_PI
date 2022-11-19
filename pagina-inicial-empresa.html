@@ -7,6 +7,8 @@
 
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
+    <script src="/scripts/alterar.js" defer></script>
+
     <!--Estilização - Variaveis-->
     <link rel="stylesheet" href="/css/main.css">
     <!--Estilização - Cabeçalho-->
@@ -88,11 +90,11 @@
             <!--Iniciando uma caixa auxiliar para estilizar melhor-->
             <div class="botao" form="pagina-inical">
                 <!--Botão para habilitar a edição e interações com as outras partes da pagina-->
-                <button type="button">Alterar</button>
+                <button id="alterar" type="button">Alterar</button>
                 <!--Botão para resetar a Pagina-->
-                <a href="/pagina-inicial-empresa.html"><button disabled type="button">Cancelar</button></a>
+                <a href="/pagina-inicial-empresa.html"><button disabled id="cancelar" type="button">Cancelar</button></a>
                 <!--Botão para salvar todas as informações/dados preenchidos-->
-                <button disabled type="button">Salvar</button>
+                <button disabled id="salvar" type="submit" form="pagina-inical">Salvar</button>
             </div>
         </main>
     </div>
