@@ -7,6 +7,8 @@
 
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
+    <script src="scripts/requisicao-cadastro-usuario.js" defer></script>
+
     <!--Estilização - Variaveis-->
     <link rel="stylesheet" href="/css/main.css">
     <!--Estilização - Cabeçalho-->
@@ -31,7 +33,7 @@
     <!--Iniciando a caixa principal da Página-->
     <main class="principal">
         <!--Abrindo uma tag de Formulário para entrada de dados-->
-        <form id="cadastro-usuario" action="">
+        <form id="cadastro-usuario" method="post" action="">
             <!--Criando o título para o Formulário-->
             <h1>Criando sua Conta</h1>
             <!--Criando um conjunto de campos-->
@@ -70,7 +72,7 @@
                         <option value="" >Selecione uma opção</option>
                         <option value="1">Masculino</option>
                         <option value="2">Feminino</option>
-                        <option value="3">Nenhuma das opções</option>
+                        <option value="3">Outros</option>
                     </select>
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->

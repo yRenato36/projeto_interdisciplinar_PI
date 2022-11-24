@@ -273,4 +273,3 @@ function removeHorarioSab() {
         inicioFimSab.removeChild(ultimoFilho)
     }
 }
-

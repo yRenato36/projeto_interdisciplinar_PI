@@ -7,6 +7,8 @@
 
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
+    <script src="/scripts/requisicao-cadastro-funcionario.js" defer></script>
+
     <!--Estilização - Variaveis-->
     <link rel="stylesheet" href="/css/main.css">
     <!--Estilização - Cabeçalho-->
@@ -14,7 +16,7 @@
     <!--Estilização - Parte da Página-->
     <link rel="stylesheet" href="/css/cadastro.css">
     <!--Estilização - Página-->
-    <link rel="stylesheet" href="/css/usuario/cadastro-usuario.css">
+    <link rel="stylesheet" href="/css/empresa/cadastro-funcionario.css">
     <!--Definindo título para a Página-->
     <title>S.O.S. | Service Organization Schedule IT</title>
 </head>
@@ -24,14 +26,14 @@
     <header id="cabecalho">
         <!--Abrindo uma tag de Navegação-->
         <nav>
-            <!--Criando um LINK para a Página "pagina-inicial-usuario"-->
+            <!--Criando um LINK para a Página "pagina-inicial-funcionario"-->
             <a href="/user-screen-home-page.html"><strong class="short-name">S.O.S. I.T.</strong></a>
         </nav>
     </header>
     <!--Iniciando a caixa principal da Página-->
     <main class="principal">
         <!--Abrindo uma tag de Formulário para entrada de dados-->
-        <form id="cadastro-usuario" action="">
+        <form id="cadastro-funcionario" action="">
             <!--Criando o título para o Formulário-->
             <h1>Cadastro de Funcionario</h1>
             <!--Criando um conjunto de campos-->
@@ -41,9 +43,9 @@
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="nome-completo-usuario">Nome Completo</label>
+                    <label for="nome-completo-funcionario">Nome Completo</label>
                     <!--Criando caixas de entrada de dados - Nome Completo-->
-                    <input required name="nome-completo-usuario" id="nome-completo-usuario" type="text">
+                    <input required name="nome-completo-funcionario" id="nome-completo-funcionario" type="text">
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
@@ -55,121 +57,67 @@
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="cpf-usuario">CPF <small>*(Apenas números)</small></label>
+                    <label for="cpf-funcionario">CPF <small>*(Apenas números)</small></label>
                     <!--Criando caixas de entrada de dados - CPF-->
-                    <input required name="cpf-usuario" id="cpf-usuario" type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{11}">
+                    <input required name="cpf-funcionario" id="cpf-funcionario" type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{11}">
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="rg-usuario">RG <small>*(Apenas números)</small></label>
+                    <label for="rg-funcionario">RG <small>*(Apenas números)</small></label>
                     <!--Criando caixas de entrada de dados - RG-->
-                    <input required name="rg-usuario" id="rg-usuario" type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{11}">
+                    <input required name="rg-funcionario" id="rg-funcionario" type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{11}">
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="sexo-usuario">Sexo</label>
+                    <label for="sexo-funcionario">Sexo</label>
                     <!--Criando caixas de entrada de dados - Sexo-->
-                    <!--Criando uma caixa de seleção para as sexualidades dos usuarios-->
-                    <select required name="sexo-usuario" id="sexo-usuario">
+                    <!--Criando uma caixa de seleção para as sexualidades dos funcionarios-->
+                    <select required name="sexo-funcionario" id="sexo-funcionario">
                         <!--Opções de Sexo do select-->
                         <option value="" >Selecione uma opção</option>
                         <option value="1">Masculino</option>
                         <option value="2">Feminino</option>
-                        <option value="3">Nenhuma das opções</option>
+                        <option value="3">Outros</option>
                     </select>
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="telefone-usuario">Tefone <small>*(Apenas números)</small></label>
+                    <label for="telefone-funcionario">Tefone <small>*(Apenas números)</small></label>
                     <!--Criando caixas de entrada de dados - Tefone-->
-                    <input required name="telefone-usuario" id="telefone-usuario" type="tel" placeholder="(99)9.9999-9999">
+                    <input required name="telefone-funcionario" id="telefone-funcionario" type="tel" placeholder="(99)9.9999-9999">
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="email-usuario">E-mail</label>
+                    <label for="email-funcionario">E-mail</label>
                     <!--Criando caixas de entrada de dados - E-mail-->
-                    <input required name="email-usuario" id="email-usuario" type="email">
+                    <input required name="email-funcionario" id="email-funcionario" type="email">
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="username-usuario">Username <small>*(mínimo cinco caracteres)</small></label>
+                    <label for="username-funcionario">Username <small>*(mínimo cinco caracteres)</small></label>
                     <!--Criando caixas de entrada de dados - Username-->
-                    <input required name="username-usuario" id="username-usuario" type="text">
+                    <input required name="username-funcionario" id="username-funcionario" type="text">
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="senha-usuario">Senha <small>*(mínimo cinco caracteres)</small></label>
+                    <label for="senha-funcionario">Senha <small>*(mínimo cinco caracteres)</small></label>
                     <!--Criando caixas de entrada de dados - Senha -->
-                    <input required name="senha-usuario" id="senha-usuario" type="password" pattern="[a-zA-Z0-9]{5}">
+                    <input required name="senha-funcionario" id="senha-funcionario" type="password" pattern="[a-zA-Z0-9]{5}">
                 </div>
                 <!--Iniciando uma caixa auxiliar para estilizar melhor-->
                 <div>
                     <!--Criando textos relacionados aos inputs-->
-                    <label for="confirmacao-senha-usuario">Digite a senha novamente</label>
+                    <label for="confirmacao-senha-funcionario">Digite a senha novamente</label>
                     <!--Criando caixas de entrada de dados - Confirmação de Senha -->
-                    <input required name="confirmacao-senha-usuario" id="confirmacao-senha-usuario" type="password">
+                    <input required name="confirmacao-senha-funcionario" id="confirmacao-senha-funcionario" type="password">
                 </div>             
             </fieldset> 
-            <!--Criando um conjunto de campos-->
-            <fieldset>
-                <!--Criando o título para o grupo de campos-->
-                <legend>Localização</legend>
-                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-                <div>
-                    <!--Criando textos relacionados aos inputs-->
-                    <label for="cep-usuario">CEP <small>*(Apenas números)</small></label>
-                    <!--Criando caixas de entrada de dados - CEP -->
-                    <input required type="text" name="cep-usuario" id="cep-usuario" placeholder="xxxxx-xxx" pattern="[0-9]{8}">
-                </div>
-                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-                <div>
-                    <!--Criando textos relacionados aos inputs-->
-                    <label for="estado-usuario">Estado</label>
-                    <!--Criando caixas de entrada de dados - Estado -->
-                    <input required type="text" name="estado-usuario" id="estado-usuario">
-                </div>
-                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-                <div>
-                    <!--Criando textos relacionados aos inputs-->
-                    <label for="cidade-usuario">Cidade</label>
-                    <!--Criando caixas de entrada de dados - Cidade-->
-                    <input required type="text" name="cidade-usuario" id="cidade-usuario">
-                </div>
-                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-                <div>
-                    <!--Criando textos relacionados aos inputs-->
-                    <label for="bairro-usuario">Bairro</label>
-                    <!--Criando caixas de entrada de dados - Bairro-->
-                    <input required type="text" name="bairro-usuario" id="bairro-usuario">
-                </div>
-                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-                <div>
-                    <!--Criando textos relacionados aos inputs-->
-                    <label for="endereco-usuario">Endereço</label>
-                    <!--Criando caixas de entrada de dados - Endereço-->
-                    <input required type="text" name="endereco-usuario" id="endereco-usuario">
-                </div>
-                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-                <div>
-                    <!--Criando textos relacionados aos inputs-->
-                    <label for="numero-usuario">Número</label>
-                    <!--Criando caixas de entrada de dados - Numero-->
-                    <input required type="text" name="numero-usuario" id="numero-usuario" pattern="{0-9}">
-                </div>
-                <!--Iniciando uma caixa auxiliar para estilizar melhor-->
-                <div>
-                    <!--Criando textos relacionados aos inputs-->
-                    <label for="complemento-usuario">Complemento <small>*(opcional)</small></label>
-                    <!--Criando caixas de entrada de dados - Complemento-->
-                    <textarea name="complemento-usuario" id="complemento-usuario" ></textarea>
-                </div>
-            </fieldset>
             <!--Iniciando uma caixa auxiliar para estilizar melhor-->
             <div>
                 <!--Criando botão voltar a pagina anterior-->

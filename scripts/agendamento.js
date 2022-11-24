@@ -9,3 +9,14 @@ function abrirImagem() {
         }
     })
 }
+
+function abrirModalMarcarCompromisso() {
+    const modal = document.getElementById('janela-marcar-compromisso')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click', (e) => {
+        if(e.target.id == 'cancelar-agenda'){
+            modal.classList.remove('abrir')
+        }
+    })
+}

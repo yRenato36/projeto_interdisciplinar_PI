@@ -1,26 +1,27 @@
 var dateToday = new Date();
 var year = dateToday.getFullYear();
 var month = dateToday.getMonth()+1;
-if (month<10){
-    month='0'+month;
-}
+
+if (month<10){month='0'+month;}
+
 var day = dateToday.getDate();
-if (day<10){
-    day='0'+day;
-}
+
+if (day<10){day='0'+day;}
+
 var dataAtual = year+'-'+month+'-'+day;
 var calendario = document.querySelector('#calendario')
+
 calendario.value = dataAtual;
 
 function posicionandoDias() {
     var date = new Date(calendario.value)
     date.setHours(date.getHours() + 3)
-    var seg = document.querySelector('#segunda-feira')
-    var ter = document.querySelector('#terca-feira')
-    var qua = document.querySelector('#quarta-feira')
-    var qui = document.querySelector('#quinta-feira')
-    var sex = document.querySelector('#sexta-feira')
-    var sab = document.querySelector('#sabado')
+    const seg = document.querySelector('#segunda-feira')
+    const ter = document.querySelector('#terca-feira')
+    const qua = document.querySelector('#quarta-feira')
+    const qui = document.querySelector('#quinta-feira')
+    const sex = document.querySelector('#sexta-feira')
+    const sab = document.querySelector('#sabado')
 
 
     var objData = new Date(calendario.value),
@@ -168,8 +169,17 @@ function posicionandoDias() {
         if (sex.textContent < 1 || sex.textContent > numDias) {sex.textContent = "-"}
         if (sab.textContent < 1 || sab.textContent > numDias) {sab.textContent = "-"}
     }
-}
+    diasDaSemana = {
+        segDia: seg.textContent,
+        terDia: ter.textContent,
+        quaDia: qua.textContent,
+        quiDia: qui.textContent,
+        sexDia: sex.textContent,
+        sabDia: sab.textContent
+    }
 
+    return diasDaSemana;
+}
 
 
 

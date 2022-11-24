@@ -8,13 +8,11 @@
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 
     <!--Script - Calendario-->
-    <script src="/scripts/calendario.js" defer></script>
+    <script src="/scripts/agenda.js" defer></script>
 
     <script src="/scripts/validacao-login.js" defer></script>
 
-    <script src="/scripts/imagem.js" ></script>
-
-    <script src="/scripts/marcar-compromisso"></script>
+    <script src="/scripts/agendamento.js" defer></script>
 
     <!--Estilização - Variaveis-->
     <link rel="stylesheet" href="/css/main.css">
@@ -88,7 +86,7 @@
                 </form>
                 <form id="gerenciamento-compromissos" action="">
                     <button type="button">Marcar Compromisso</button>
-                    <button type="button">Desmarcar Compromisso</button>
+                    <button type="button" onclick="onclick=abrirModalMarcarCompromisso()">Desmarcar Compromisso</button>
                 </form>
             </div>
             <div class="principal-direita">
@@ -180,6 +178,22 @@
     </div>
     <div id="janela-modal">
         <img id="imagem-grande-empresa" src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/Fatec-Indaiatuba.jpeg" alt="Imagem Grande da Empresa">
+    </div>
+    <div id="janela-marcar-compromisso">
+        <div id="criando-compromisso">
+            <h1>Confirmação</h1>
+            <strong id="nome_empresa"></strong>
+            <strong id="endereco_empresa"></strong>
+            <strong id="contato_empresa"></strong>
+            <div>
+                <span>Incio:</span>
+                <span id="hora_inicio"></span>
+                <span>Fim:</span>
+                <span id="hora_fim"></span>
+            </div>
+            <hr>
+            <h2></h2>
+        </div>
     </div>
 </body>
 </html>

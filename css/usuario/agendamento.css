@@ -1,3 +1,25 @@
+#enviar-emails {
+    display: none;
+}
+
+#janela-marcar-compromisso {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000009b;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#janela-marcar-compromisso.abrir {
+    display: flex;
+}
+
 #janela-modal{
     width: 100%;
     height: 100%;
@@ -16,6 +38,17 @@
     display: flex;
 }
 
+@keyframes abrirModalMarcarCompromisso {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 @keyframes abrirModal {
     from{
         opacity: 0;
@@ -25,6 +58,10 @@
         opacity: 1;
         transform: translate3d(0,0,0);
     }
+}
+
+.abrir #imagem-grande-empresa {
+    animation: abrirModal 1s;
 }
 
 #imagem-grande-empresa {
