@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.sos2.SOS2"},{"l":"com.sos2.SOS2.controllers"},{"l":"com.sos2.SOS2.dto"},{"l":"com.sos2.SOS2.entidade"},{"l":"com.sos2.SOS2.repositories"},{"l":"com.sos2.SOS2.services"}];updateSearchResults();
